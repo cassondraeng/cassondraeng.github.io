@@ -1,0 +1,81 @@
+*{
+	font-size: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.row {
+  margin-bottom: 15px;
+}
+.row > div {
+
+}
+
+.jumbotron{
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*if colors aren't clear*/
+/*.navbar .navbar-toggle {
+  border-color: blue;
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: blue;
+}*/
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+ul.pagination {
+	margin-left: 40%;
+}
+#vtechimage {
+	width: 50% !important;
+}
+.logo {
+	border: none;
+}
+h1 { 
+	font-size: 230%;
+	font-weight: semi-bold;
+}
+h2 {
+	font-size: 150%;
+	font-weight: semi-bold;
+}
+ul{
+	font-size: 120%;
+}
+#header-info {
+	font-size: 140%;
+}
+#questions{
+	margin-left: 15px;
+	font-size: 150%;
+}
+#vtlogo {
+	height: 50px;
+	width: auto;
+}
+#pennlogo {
+	height: 60px;
+	width: auto;
+}
+.freetime p {
+	font-size: 120%;
+}
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+#footertext{
+	font-size: 120%;
+	text-align: right;
+	padding-top: 20px;
+}
+
