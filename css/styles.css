@@ -16,36 +16,10 @@
 	padding-left: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin-bottom: 0;
 }
 
-#top_row nav{
-	float:right;
-	padding-right:15px;
-	padding-bottom:15px;
-}
 
-#top_row nav a {
-	text-decoration: none;
-	font-size: 1.125em;
-	font-weight: 400;
-	padding:15px;
-	color:#061324;
-}
-
-#top_row nav a.selected {
-	background: #F6F6F6;
-	color: #DB5756;
-}
-
-#top_row nav a.selected:hover {
-	background: #F1F1F1;
-	color: #A8C9DA;
-}
-
-#top_row nav a:hover{
-	background: #F1F1F1;
-	color: #49738C;
-}
 
 /*if colors aren't clear*/
 /*.navbar .navbar-toggle {
