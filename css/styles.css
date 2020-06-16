@@ -4,21 +4,38 @@
 }
 
 /*  Background video and words*/
-.video-overlay-text {
+.video-overlay {
 	width: 100%;
-	height: auto;
+	height: 70%;
+	margin-top: -20px;
 	min-height: 300px;
 	background: rgba(0, 0, 0, 0.5);
+	padding-bottom: 30px;
 }
 
+.video-overlay-text {
+	position: relative;
+	top: 10vmin;
+	vertical-align: middle;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+}
+
+
 .video-overlay-text h1{
-	font-size: 80px;
+	font-size: 20vmin;
 	color: white;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .video-overlay-text p{
 	font-size: 30px;
 	color: white;
+	text-align: center;
 }
 
 #background-video {
@@ -26,7 +43,7 @@
 	min-width: 100%;
 	height: auto;
 	right: 0;
-	  bottom: 0;
+	top: 0;
 	position: fixed;
 	z-index: -1;
 }
