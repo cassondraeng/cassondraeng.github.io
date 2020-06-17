@@ -22,6 +22,11 @@ gtag('config', 'UA-127639225-2');
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -86,32 +91,88 @@ gtag('config', 'UA-127639225-2');
       </nav>
 
       <!-- The Content -->
-      <div class="container-fluid">
+      <div class="container">
           <!-- The first row -->
-          <div class="row" id="questions">
-            <div class="col-md-4 col-sm-6">
-                <img src="images/Cassie.jpg"  alt="Cassie Eng portrait">
+          <div class="row index-section" id="questions">
+            <div class="col-sm-6">
+                <img src="images/cassie-square.jpg"  alt="Cassie Eng portrait" style="border-radius:100%;width:40vmin;">
             </div>
+            <div class="col col-sm-6 align-self-cente">
+                My mission statement is to design educational materials and interventions to meet the needs of 
+                diverse learners and optimize learning outcomes. Specifically, my research focuses on developing tools 
+                that are especially useful for children with less developed attention regulation and for low-income youth.
+            </div>
+          </div> 
 
-              <div class="col-md-6 col-sm-12">
-                  <ul>
-                  My mission statement is to design educational materials and interventions to meet the needs of 
-                  diverse learners and optimize learning outcomes. Specifically, my research focuses on developing tools 
-                  that are especially useful for children with less developed attention regulation and for low-income youth.
-                  <p><li>How can we utilize physiological and imaging techniques such as eye-tracking and noninvasive 
-                  functional near-infrared spectroscopy (fNIRS) to investigate underlying cognitive processes in 
-                  learning contexts?</p></li>
-                  <li><p>How can we apply learning theories in developmental and cognitive psychology to enrich 
-                  the experiences children have with technology and educational media?</p></li>
-                  </ul>
-              </div>
-              <div class="col-md-2 col-sm-6">
-                  <img src="images/brain.gif" class="img-thumbnail" alt="Rotating frontal lobe">
-                  <img src="images/Next to GIF of beating brain.png" class="img-thumbnail" alt="Rotating frontal lobe">
-              </div>
+          <div class="row">
           </div>
-          <div ckass="row">
-          </div>
+
+
+
+
+
+
+
+
+          <div class="container">
+            <div class="row w-100 p-5 alert-info">
+                <div class="col-md-6 alert-danger vertical-center2">
+                    <img src="images/cassie-square.jpg"  alt="Cassie Eng portrait" style="border-radius:100%;width:40vmin;margin:auto;">
+                </div>
+                <div class="col-md-6 text-center">
+                    <p>
+                    My mission statement is to design educational materials and interventions to meet the needs of 
+                diverse learners and optimize learning outcomes. Specifically, my research focuses on developing tools 
+                that are especially useful for children with less developed attention regulation and for low-income youth.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 alert-danger h-100">
+                <h1>Key Research Questions</h1>
+                <p><li>How can we utilize physiological and imaging techniques such as eye-tracking and noninvasive 
+                functional near-infrared spectroscopy (fNIRS) to investigate underlying cognitive processes in 
+                learning contexts?</p></li>
+                <li><p>How can we apply learning theories in developmental and cognitive psychology to enrich 
+                the experiences children have with technology and educational media?</p></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 alert-danger h-100">
+                <img src="images/Next to GIF of beating brain.png" class="img-thumbnail" alt="Rotating frontal lobe"  style="width:40vmin;">
+              </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row w-100 p-5">
+                <hr>
+                <div class="col-sm-6 text-center">
+                    <p class="vertical-center">
+                    I do non-technical things too! I enjoy playing jazz piano,
+                     making electronic music, taking photos of 
+                     food, and learning about languages (currently studying Spanish and
+                    Japanese). I also play Starcraft II sometimes :)
+                    </p>
+                </div>
+                <div class="col-sm-6 text-center align-self-center" align="center">
+                    <a href="/about" class="btn btn-info" role="button">Learn More</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <!-- The Footer -->
           <footer class="footer">
@@ -121,10 +182,6 @@ gtag('config', 'UA-127639225-2');
           </footer>
       </div>
 
-      <!-- jQuery (Bootstrap JS plugins depend on it) -->
-      <script src="js/jquery-1.11.3.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/script.js"></script>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
