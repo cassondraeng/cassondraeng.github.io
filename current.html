@@ -22,7 +22,66 @@ gtag('config', 'UA-127639225-2');
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+<style>
+  * {box-sizing: border-box}
+  .mySlides1, .mySlides2 {display: none}
+  img {vertical-align: middle;}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+
+  .img-container {
+    text-align: center;
+  }
+
+  /* Caption text */
+  .text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+  </style>
 </head>
+
+
 <body>
   <!-- The Header -->
   <div class="jumbotron">
@@ -59,7 +118,7 @@ gtag('config', 'UA-127639225-2');
           <li><a href="scavenger.html">Team Building</a></li>
         </ul>
         </li>
-        
+
         <li><a href="diversity.html">Diversity & Inclusion</a></li>
       </ul>
     </div>
@@ -79,35 +138,82 @@ gtag('config', 'UA-127639225-2');
                 <h4><a href="https://sites.google.com/andrew.cmu.edu/cogdevlab">Cognitive Development Lab</a></h4>
                 <h4><a href="https://www.cmu.edu/dietrich/psychology/infant-language-learning-lab/">Infant Language and Learning Lab</a></h4>
 
+
                 <div class="row">
 
-                      <div class="col-md-4 col-sm-6">
-                          
-                          <h2{font-size: .85em}>Developed an exercise-based interactive game to enhance cognition in 4- to 5-year-olds.</h2>
-                          <img src="images/current_research/1.png" class="img-thumbnail">
-                      </div>
-                      <div class="col-md-4 col-sm-6">
-                       
-                          <h2{font-size: .85em}>Using fNIRS to examine the short- and long-term associations between exercise-induced training, functional brain connectivity, cognitive control, and later verbal abilities in 4- to 5-year-olds </h2>
-                          <img src="images/current_research/fNIRS.gif" class="img-thumbnail">
+                  <h2>    Exergame Study:</h2>
+                  <div class="slideshow-container">
+                    <div class="mySlides1">
+                      <div class="img-container">
+                      <img src="images/ImageC1.png" style = "width:30%">
+                      <div class="text">Developed an exercise-based interactive game to enhance cognition in 4- to 5-year-olds.</div>
                     </div>
-                      <div class="col-md-4 col-sm-6">
-                         
-                          <h2{font-size: .85em}>Modifying commercially available physically active video games in virtual reality to improve attention regulation in students</h2>
-                          <img src="images/current_research/3.png" class="img-thumbnail" alt="Cassie with a sculpture she made out of electronic parts">
-                          <img src="images/current_research/VR.jpg" class="img-thumbnail">
-                      </div>
-                </div>
-                <div class="row">
-                      <div class="col-md-4 col-sm-6">
-                          <h2{font-size: .85em}>Examining the impact of varying visual presentations in educational books on first and second graders’ developing reading, learning skills and understandings. Utilizing eye-tracking technology and SMI BeGaze Eyetracking Analysis Software to collect, extract, and analyze gaze shifts, blinks, saccades, fixations, and pupil dilation to investigate attention allocation of beginning readers </h2>
-                          <img src="images/current_research/4.png" class="img-thumbnail">
-                      </div>
-                      <div class="col-md-4 col-sm-6">
-                         
-                          <h2{font-size: .85em}>Investigated how to instill the practices of high quality adult-child interactions in interactive digital technologies to improve learning outcomes. <a href="https://www.researchgate.net/profile/Cassondra_Eng/publication/338052626_Contingent_Responsivity_in_E-Books_Modeled_from_Quality_Adult-Child_Interactions_Effects_on_Children%27s_Learning_and_Attention/links/5dfbf0d84585159aa48a3f77/Contingent-Responsivity-in-E-Books-Modeled-from-Quality-Adult-Child-Interactions-Effects-on-Childrens-Learning-and-Attention.pdf">Link</a> </h2> <img src="images/current_research/5.png" class="img-thumbnail">
-                        </div>
-                </div>
+                    </div>
+
+                    <div class="mySlides1">
+                      <div class="img-container">
+                      <img src="images/ImageC2.gif" style = "width:60%">
+                      <div class="text">Using fNIRS to examine the short- and long-term associations between exercise-induced training, functional brain connectivity, cognitive control, and later verbal abilities in 4- to 5-year-olds.</div>
+                    </div>
+                    </div>
+
+                    <div class="mySlides1">
+                      <div class="img-container">
+                      <img src="images/ImageC3-C4.png" style = "width:70%">
+                      <div class="text">Modifying commercially available physically active video games in virtual reality to improve attention regulation in students</div>
+                    </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                  </div>
+
+                  <h2>     Reading Study:</h2>
+                  <div class="slideshow-container">
+                    <div class="mySlides2">
+                      <div class="img-container">
+                      <img src="images/4.png" style = "width:80%">
+                      <div class="text">Examining the impact of varying visual presentations in educational books on first and second graders’ developing reading, learning skills and understandings. Utilizing eye-tracking technology and SMI BeGaze Eyetracking Analysis Software to collect, extract, and analyze gaze shifts, blinks, saccades, fixations, and pupil dilation to investigate attention allocation of beginning readers</div>
+                    </div>
+                    </div>
+
+
+                    <div class="mySlides2">
+                      <div class="img-container">
+                      <img src="images/5.png" style = "width:70%">
+                      <div class="text">Investigated how to instill the practices of high quality adult-child interactions in interactive digital technologies to improve learning outcomes. </div>
+                    </div>
+                    </div>
+
+
+
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                  </div>
+
+
+                      <script>
+                        var slideIndex = [1,1];
+                        var slideId = ["mySlides1", "mySlides2"]
+                        showSlides(1, 0);
+                        showSlides(1, 1);
+
+                        function plusSlides(n, no) {
+                          showSlides(slideIndex[no] += n, no);
+                        }
+
+                        function showSlides(n, no) {
+                          var i;
+                          var x = document.getElementsByClassName(slideId[no]);
+                          if (n > x.length) {slideIndex[no] = 1}
+                          if (n < 1) {slideIndex[no] = x.length}
+                          for (i = 0; i < x.length; i++) {
+                             x[i].style.display = "none";
+                          }
+                          x[slideIndex[no]-1].style.display = "block";
+                        }
+                        </script>
+
                 </div>
               </div>
             </div>

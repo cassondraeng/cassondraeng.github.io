@@ -22,6 +22,30 @@ gtag('config', 'UA-127639225-2');
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+<style>
+  .button {
+  background-color: black;
+  border:none;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+  float: center;
+  width: 175px
+}
+
+.button:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+
 </head>
 <body>
 
@@ -37,32 +61,32 @@ gtag('config', 'UA-127639225-2');
     </div>
 
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" style = "background-color: #525252 ">
       <div class="container-fluid">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">About Me</a></li>
+          <li><a href="index.html" class="button" style = "color:white">About Me</a></li>
 
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
+          <li class="nav navbar-nav">
+            <a class="button" data-toggle="dropdown"  style = "color:white" href="#">Research
+            <span class="caret"  style = "color:black"></span></a>
+            <ul class="dropdown-menu" style = "color:black">
               <li><a href="current.html">Current</a></li>
               <li><a href="past.html">Prior</a></li>
             </ul>
             </li>
 
-          <li><a href="interests.html">Innovation</a></li>
-          <li ><a href="publications.html">Publications</a></li>
-          <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team
+          <li><a href="interests.html" class = "button"  style = "color:white" >Innovation</a></li>
+          <li ><a href="publications.html" class = "button"  style = "color:white" >Publications</a></li>
+          <li class="nav navbar-nav">
+          <a class="button" data-toggle="dropdown"  style = "color:white" href="#">Team
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="team.html">Meet the Team!</a></li>
             <li><a href="scavenger.html">Team Building</a></li>
           </ul>
           </li>
-          
-          <li><a href="diversity.html">Diversity & Inclusion</a></li>
+
+          <li><a href="diversity.html" class = "button"  style = "color:white">Diversity & Inclusion</a></li>
         </ul>
       </div>
     </nav>
