@@ -37,14 +37,28 @@
 	text-align: center;
 }
 
-#background-top {
+.image-overlay-text {
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+	vertical-align: middle;
+	font-size: 8vmin;
+	height:100%;
+	padding-top: 10vmin;
+	padding-bottom: 10vmin;
+	color: white;
+	text-align: center;
+}
+
+/* use inline CSS to specify the image (background-image: url(<image path>);)*/
+.image-background {
 	width: auto;
 	min-width: 100%;
-	height: auto;
+	height: 60vmin;
 	right: 0;
 	top: 0;
-	position: fixed;
 	z-index: -1;
+	background-attachment:fixed;
+	background-size:cover;
 }
 
 
