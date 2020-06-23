@@ -65,9 +65,6 @@
 .row {
   margin-bottom: 15px;
 }
-.row > div {
-
-}
 
 .jumbotron{
 	padding-left: 30px;
@@ -113,6 +110,10 @@ hr
 .row.display-flex > [class*='col-'] {
 	display: flex;
 	flex-direction: column;
+}
+
+.navbar {
+	background-color:black !important;
 }
 
 /*if colors aren't clear*/
