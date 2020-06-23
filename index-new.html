@@ -32,6 +32,10 @@ gtag('config', 'UA-127639225-2');
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
+<!--
+
+
+
 <style>
   .button {
       background-color: black;
@@ -45,9 +49,34 @@ gtag('config', 'UA-127639225-2');
       margin: 4px 4px;
       cursor: pointer;
       float: center;
-      width: auto;
+      width: 250px;
+      height: 85px;
+}
+
+  .dropdown {
+      background-color: black;
+      border:none;
+      color: white;
+      padding: 30px 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 4px;
+      cursor: pointer;
+      float: center;
+      width: 250px;
+      height: 85px;
 }
 </style>
+-->
+
+<style>
+.navbar {
+  background-color:black !important;
+}
+</style>
+
 </head>
 
 
@@ -66,41 +95,42 @@ gtag('config', 'UA-127639225-2');
       <source src="videos/index-video.mp4" type="video/mp4">
     </video>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style = "background-color: #525252 ">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a href="index.html" class="button" style = "color:white">About Me</a></li>
-
-          <li class="nav-item">
-            <a class="button" data-toggle="dropdown"  style = "color:white" href="#">Research
-            <span class="caret"  style = "color:black"></span></a>
-            <ul class="dropdown-menu" style = "color:black">
-              <li><a href="current.html">Current</a></li>
-              <li><a href="past.html">Prior</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
             </li>
-
-          <li class="nav-item"><a href="interests.html" class = "button"  style = "color:white" >Innovation</a></li>
-          <li class="nav-item"><a href="publications.html" class = "button"  style = "color:white" >Publications</a></li>
-          <li class="nav-item">
-          <a class="button" data-toggle="dropdown"  style = "color:white" href="#">Team
-          <span class="caret"></span></a>
-          <li class="nav-item">
-            <ul class="dropdown-menu">
-              <li><a href="team.html">Meet the Team!</a></li>
-              <li><a href="scavenger.html">Team Building</a></li>
-          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Research
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="current.html">Current</a>
+                <a class="dropdown-item" href="prior.html">Prior</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="art.hmtl">Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="diversity.html">Diversity & Inclusion</a>
+            </li>
           </ul>
-          </li>
-
-          <li class="nav-item"><a href="diversity.html" class = "button"  style = "color:white">Diversity & Inclusion</a></li>
-        </ul>
+        </div>
       </div>
     </nav>
-
+  
     <div class="index-content">
       <!-- The Content -->
       <div class="container">
