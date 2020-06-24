@@ -1,3 +1,14 @@
+<!-- OLD STYLE INCLUDES -->
+<!--
+  <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+-->
+
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127639225-2"></script>
@@ -18,89 +29,161 @@ gtag('config', 'UA-127639225-2');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cassie Eng</title>
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+
+<!--
+
+
+
+<style>
+  .button {
+      background-color: black;
+      border:none;
+      color: white;
+      padding: 30px 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 4px;
+      cursor: pointer;
+      float: center;
+      width: 250px;
+      height: 85px;
+}
+
+  .dropdown {
+      background-color: black;
+      border:none;
+      color: white;
+      padding: 30px 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 4px;
+      cursor: pointer;
+      float: center;
+      width: 250px;
+      height: 85px;
+}
+</style>
+-->
+
+<style>
+.navbar {
+  background-color:black !important;
+}
+</style>
+
 </head>
+
+
 <body>
 
-    <!-- The Header -->
-    <div class="jumbotron">
+    <!-- some overlay text to describe the video -->
+    <div class="video-overlay">
+      <div class="video-overlay-text">
         <h1>Cassie Eng</h1>
-        <div id="header-info">
-            <b>Ph.D. Candidate at Carnegie Mellon University</b> with a focus in Developmental Psychology and Cognitive Neuroscience <br>
-            <a href="https://www.cmu.edu/pier/index.html">Program in Interdisciplinary Education Research</a> (PIER) Training Fellow <br>
-            <a href="http://www.cnbc.cmu.edu/training/graduate/cnbc-grad-training-program/">Center for the Neural Basis of Cognition </a> (CNBC) Training Fellow <br>
-            Email: cassonde@andrew.cmu.edu
-        </div>
+        <p>Ph.D. Candidate at Carnegie Mellon University <br> with a focus in Developmental Psychology and Cognitive Neuroscience</p>
+      </div>
     </div>
 
+    <!-- The video -->
+    <video autoplay muted loop id="background-video">
+      <source src="videos/index-video.mp4" type="video/mp4">
+    </video>
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">About Me</a></li>
-
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="current.html">Current</a></li>
-              <li><a href="past.html">Prior</a></li>
-            </ul>
+    <!-- The Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">About Me<span class="sr-only">(current)</span></a>
             </li>
-
-          <li><a href="interests.html">Innovation</a></li>
-          <li ><a href="publications.html">Publications</a></li>
-          <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="team.html">Meet the Team!</a></li>
-            <li><a href="scavenger.html">Team Building</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Research
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="current.html">Current</a>
+                <a class="dropdown-item" href="prior.html">Prior</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="art.html">Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Team
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="team.html">Meet the team!</a>
+                <a class="dropdown-item" href="teambuilding.html">Team building</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="diversity.html">Diversity & Inclusion</a>
+            </li>
           </ul>
-          </li>
-          
-          <li><a href="diversity.html">Diversity & Inclusion</a></li>
-        </ul>
+        </div>
       </div>
     </nav>
-
-    <!-- The Content -->
-    <div class="container-fluid">
-        <!-- The first row -->
-        <div class="row" id="questions">
-          <div class="col-md-4 col-sm-6">
-              <img src="images/Cassie.jpg"  alt="Cassie Eng portrait">
+  
+    <div class="index-content">
+      <!-- The Content -->
+      <div class="container">
+        <div class="row justify-content-center p-5">
+        <hr>
+          <div class="col-md-4 vertical-center2">
+              <img src="images/cassie-square.jpg"  alt="Cassie Eng portrait" style="border-radius:100%;width:40vmin;margin:auto;">
           </div>
-
-            <div class="col-md-6 col-sm-12">
-                <ul>
-                My mission statement is to design educational materials and interventions to meet the needs of diverse learners and optimize learning outcomes. Specifically, my research focuses on developing tools that are especially useful for children with less developed attention regulation and for low-income youth.
-                <p><li>How can we utilize physiological and imaging techniques such as eye-tracking and noninvasive functional near-infrared spectroscopy (fNIRS) to investigate underlying cognitive processes in learning contexts?</p></li>
-                <li><p>How can we apply learning theories in developmental and cognitive psychology to enrich the experiences children have with technology and educational media?</p></li>
-                </ul>
-            </div>
-            <div class="col-md-2 col-sm-6">
-                <img src="images/brain.gif" class="img-thumbnail" alt="Rotating frontal lobe">
-                <img src="images/Next to GIF of beating brain.png" class="img-thumbnail" alt="Rotating frontal lobe">
-            </div>
+          <div class="col-md-4 text-center">
+              <p class="vertical-center">
+              My mission statement is to design educational materials and interventions to meet the needs of 
+          diverse learners and optimize learning outcomes. Specifically, my research focuses on developing tools 
+          that are especially useful for children with less developed attention regulation and for low-income youth.
+              </p>
+          </div>
         </div>
-
-
-        <!-- The Footer -->
-        <footer class="footer">
-            <div class="container" id="footertext">
-                <span class="text-muted">Website by Marie Shaw, Dominic Calkosz and Sebastian Yang</span>
-            </div>
-        </footer>
+        <hr>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h1>Key Research Questions</h1>
+            <p><li>How can we utilize physiological and imaging techniques such as eye-tracking and noninvasive 
+            functional near-infrared spectroscopy (fNIRS) to investigate underlying cognitive processes in 
+            learning contexts?</p></li>
+            <p><li>How can we apply learning theories in developmental and cognitive psychology to enrich 
+            the experiences children have with technology and educational media?</p></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <img src="images/Next to GIF of beating brain.png" class="img-thumbnail vertical-center" alt="Rotating frontal lobe"  style="width:40vmin;">
+          </div>
+        </div>
+        <hr>
+      </div>
+      
+      <!-- The Footer -->
+      <footer class="footer">
+          <div class="container" id="footertext">
+              <span class="text-muted">Website by Marie Shaw, Dominic Calkosz, Sebastian Yang, Maanasi Bulusu, and George Whitfield, Jr.</span>
+          </div>
+      </footer>
     </div>
 
-    <!-- jQuery (Bootstrap JS plugins depend on it) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-
-</body>
+    <!-- New Style Includes -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>

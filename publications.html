@@ -18,167 +18,197 @@ gtag('config', 'UA-127639225-2');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cassie Eng</title>
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-</head>
+
+  <style>
+    .button {
+        background-color: black;
+        border:none;
+        color: white;
+        padding: 30px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 4px;
+        cursor: pointer;
+        float: center;
+        width: 175px
+      }
+  </style>
+  </head>
 <body>
 
     <!-- The Header -->
-    <div class="jumbotron">
-        <h1>Cassie Eng</h1>
-        <div id="header-info">
-            <b>Ph.D. Candidate at Carnegie Mellon University</b> with a focus in Developmental Psychology and Cognitive Neuroscience <br>
-            <a href="https://www.cmu.edu/pier/index.html">Program in Interdisciplinary Education Research</a> (PIER) Training Fellow <br>
-            <a href="http://www.cnbc.cmu.edu/training/graduate/cnbc-grad-training-program/">Center for the Neural Basis of Cognition </a> (CNBC) Training Fellow <br>
-            Email: cassonde@andrew.cmu.edu
-        </div>
+    <div class="image-background" style="background-image:url(images/brain.gif);">
+      <div class="image-overlay-text">
+        <h1 class="vertical-center">Publications</h1>
+      </div>
     </div>
 
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">About Me</a></li>
-
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="current.html">Current</a></li>
-              <li><a href="past.html">Prior</a></li>
-            </ul>
+    <!-- The Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About Me<span class="sr-only">(current)</span></a>
             </li>
-
-          <li><a href="interests.html">Innovation</a></li>
-          <li class="active"><a href="publications.html">Publications</a></li>
-          <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="team.html">Meet the Team!</a></li>
-            <li><a href="scavenger.html">Team Building</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Research
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="current.html">Current</a>
+                <a class="dropdown-item" href="prior.html">Prior</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="art.html">Art</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Team
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="team.html">Meet the team!</a>
+                <a class="dropdown-item" href="teambuilding.html">Team building</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="diversity.html">Diversity & Inclusion</a>
+            </li>
           </ul>
-          </li>
-          
-          <li><a href="diversity.html">Diversity & Inclusion</a></li>
-        </ul>
+        </div>
       </div>
     </nav>
 
     <!-- The Content -->
-    <div class="container w-75 p-3">
-      <ol type="1">
-        <h2>Publications:</h2>
+    <div class="container">
+      <hr>
+      <div class="row justify-content-center p-5">
+          <div class="col-md-10">
+          <ol type="1">
+            <h2>Publications:</h2>
 
-        <sup>*</sup>Denotes undergraduate student or research assistant mentored <br> <br>
-        
-         <li>Eng, C., <sup>*</sup>Pocsai, M., <sup>*</sup>Calkosz, D., Fishburn, F., Thiessen, E., & Fisher, A. (2020). Adaptations of Executive Function and Prefrontal Cortex Connectivity Following Exergame Play in 4- to 5-year old Children. <i>Proceedings of the 42nd Annual Conference of the Cognitive Science Society, Toronto, Canada. </i></li><br>
+            <sup>*</sup>Denotes undergraduate student or research assistant mentored <br> <br>
+            
+            <li>Eng, C., <sup>*</sup>Pocsai, M., <sup>*</sup>Calkosz, D., Fishburn, F., Thiessen, E., & Fisher, A. (2020). Adaptations of Executive Function and Prefrontal Cortex Connectivity Following Exergame Play in 4- to 5-year old Children. <i>Proceedings of the 42nd Annual Conference of the Cognitive Science Society, Toronto, Canada. </i></li><br>
 
-        <li>Eng, C. M., Tomasic, A. S., & Thiessen, E. D. (2020). Contingent responsivity in E-books modeled from quality adult-child interactions: Effects on children’s learning and attention. <i>Developmental Psychology, 56</i>(2), 285–297. https://doi.org/10.1037/dev0000869</li><br>
-         
-        <li>Eng, C., <sup>*</sup>Pocsai, M., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., Thiessen, E., & Fisher, A. (2019). Exergame Training of Executive Function in Preschool Children: Generalizability and Long-term Effects. <i>Proceedings of the 41st Annual Conference of the Cognitive Science Society, Montréal, Canada. </i></li><br>
-         
-        <li>Godwin, K., Eng, C., Murray, G., & Fisher, A. (2019). Book Design, Attention, and Reading Performance: Current Practices and Opportunities for Optimization. <i>Proceedings of the 41st Annual Conference of the Cognitive Science Society, Montréal, Canada. </i></li><br>
-        
-        <li>Eng, C., Tomasic, A., & Thiessen, E. (2018). Contingent Responsiveness in Digital Storybooks: Effects on Children’s Comprehension and the Role of Individual Differences in Attention. <i> Proceedings of the 40th Annual Conference of the Cognitive Science Society, Madison, WI. </i></li><br>
-         
-        <li>Eng, C., Godwin, K., <sup>*</sup>Boyle, K., & Fisher, A. (2018). Effects of Illustration Details on Attention and Comprehension in Beginning Readers. <i> Proceedings of the 40th Annual Conference of the Cognitive Science Society, Madison, WI. </i></li><br>
-         
-        <li>Eng, C., Tomasic, A., & Thiessen, E. (2018). Contingent Responsiveness in Digital Books: Effects on Children’s Comprehension and Attention. <i>Proceedings of The Jean Piaget Society, The Dynamics of Development: Process, Inter-Action, and Complexity, Amsterdam, The Netherlands. </i></li><br>
-         
-        <li>Godwin, K., Eng, C., & Fisher, A. (2017). Gaze Shifts between Text and Illustrations are Negatively Related to Reading Fluency in Beginning Readers. <i> Proceedings of the 39th Annual Conference of the Cognitive Science Society, London, UK. </i></li><br>
-         
-        <li>Eng, C. (2011). DeVry vs. PSU: The Underlying Messages that Influence Consumers. <i>Penn Statements, 20</i>, 12-18, State College, PA.</li><br>
-        
-      </ol>
-        
-        
-     <ol>
-      <h2>Presentations:</h2>
-        
-       <li>Eng, C., <sup>*</sup>Pocsai, M., Fishburn, F., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., Thiessen, E., & Fisher, A. (2020). Effects of Physically-active Digital Games on Executive Function and Resting Prefrontal Cortex Connectivity in Children. Presentation acceptance the Annual Interdisciplinary Innovation with Impact Exhibition, Pittsburgh, PA.</li><br>
+            <li>Eng, C. M., Tomasic, A. S., & Thiessen, E. D. (2020). Contingent responsivity in E-books modeled from quality adult-child interactions: Effects on children’s learning and attention. <i>Developmental Psychology, 56</i>(2), 285–297. https://doi.org/10.1037/dev0000869</li><br>
+            
+            <li>Eng, C., <sup>*</sup>Pocsai, M., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., Thiessen, E., & Fisher, A. (2019). Exergame Training of Executive Function in Preschool Children: Generalizability and Long-term Effects. <i>Proceedings of the 41st Annual Conference of the Cognitive Science Society, Montréal, Canada. </i></li><br>
+            
+            <li>Godwin, K., Eng, C., Murray, G., & Fisher, A. (2019). Book Design, Attention, and Reading Performance: Current Practices and Opportunities for Optimization. <i>Proceedings of the 41st Annual Conference of the Cognitive Science Society, Montréal, Canada. </i></li><br>
+            
+            <li>Eng, C., Tomasic, A., & Thiessen, E. (2018). Contingent Responsiveness in Digital Storybooks: Effects on Children’s Comprehension and the Role of Individual Differences in Attention. <i> Proceedings of the 40th Annual Conference of the Cognitive Science Society, Madison, WI. </i></li><br>
+            
+            <li>Eng, C., Godwin, K., <sup>*</sup>Boyle, K., & Fisher, A. (2018). Effects of Illustration Details on Attention and Comprehension in Beginning Readers. <i> Proceedings of the 40th Annual Conference of the Cognitive Science Society, Madison, WI. </i></li><br>
+            
+            <li>Eng, C., Tomasic, A., & Thiessen, E. (2018). Contingent Responsiveness in Digital Books: Effects on Children’s Comprehension and Attention. <i>Proceedings of The Jean Piaget Society, The Dynamics of Development: Process, Inter-Action, and Complexity, Amsterdam, The Netherlands. </i></li><br>
+            
+            <li>Godwin, K., Eng, C., & Fisher, A. (2017). Gaze Shifts between Text and Illustrations are Negatively Related to Reading Fluency in Beginning Readers. <i> Proceedings of the 39th Annual Conference of the Cognitive Science Society, London, UK. </i></li><br>
+            
+            <li>Eng, C. (2011). DeVry vs. PSU: The Underlying Messages that Influence Consumers. <i>Penn Statements, 20</i>, 12-18, State College, PA.</li><br>
+            
+          </ol>
+            
+            
+          <ol>
+            <h2>Presentations:</h2>
+              
+            <li>Eng, C., <sup>*</sup>Pocsai, M., Fishburn, F., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., Thiessen, E., & Fisher, A. (2020). Effects of Physically-active Digital Games on Executive Function and Resting Prefrontal Cortex Connectivity in Children. Presentation acceptance the Annual Interdisciplinary Innovation with Impact Exhibition, Pittsburgh, PA.</li><br>
 
-        <li>Eng, C. (2019). Education and the Brain, a Bridge Not Too Far: Game-Based Assessment and Neuroplasticity. Invited Speaker at the National Science Foundation (NSF)-sponsored Conference: Game-based Assessment: An Interdisciplinary Workshop Integrating Organizations, Education, and Assessment, Minneapolis, MN.  </li><br>
-         
-        <li>Eng, C., <sup>*</sup>Pocsai, M., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., Thiessen, E., & Fisher, A. (2019). Effects of Cognitive-Motor Training on Executive Function and Resting Prefrontal Cortex Connectivity in Preschool Children: an fNIRS Study. Presentation at the Annual Society for Neuroscience Meeting, Chicago, IL.</li><br>
-         
-        <li><sup>*</sup>Tsegai-Moore, A., Fisher, A., & Eng, C. (2019). Cognitive Game-based Assessment Performance, Educational Outcomes, and Prefrontal Cortex Connectivity. Presentation at the Annual Biomedical Research Conference for Minority Students, Anaheim, CA. </li><br>
-         
-        <li><sup>*</sup>Stanley, O., <sup>*</sup>Boyle, K., Fisher, A., & Eng, C. (2019). The Effects of Book Design on Beginning Reader’s Visual Attention and Reading Comprehension: An Eye-Tracking Study. Presentation at The Eberly Center for Teaching Excellence and Educational Innovation’s Teaching and Learning Summit, Pittsburgh, PA. </li><br>
-         
-        <li>Eng, C., <sup>*</sup>Pocsai, M., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., Fisher, A., & Thiessen, E. (2019). Effects of Exergame Training on Executive Function and Resting Prefrontal Cortex Connectivity in Preschool Children: an fNIRS Study. Presentation at the International Society for Developmental Psychobiology, Chicago, IL.</li><br>
-         
-        <li>Eng, C. (2019). The Effects of Cognitive-Motor Training on Resting State Prefrontal Cortex Connectivity and Executive Function in Preschool Children. Presentation at the University of Pittsburgh Graduate School of Public Health Training Grant Retreat in Population Neuroscience, Pittsburgh, PA.</li><br>
-         
-        <li>Eng, C., Godwin, K., <sup>*</sup>Boyle, K., & Fisher, A. (2019). Effects of Book Design on 1st and 2nd Grade Children’s Attention and Learning. Presentation at the Society for Research in Child Development Meeting, Baltimore, MD.</li><br>
-         
-        <li>Eng, C., Godwin, K., <sup>*</sup>Boyle, K., & Fisher, A. (2019). Effects of Book Design on Attention and Reading Comprehension Among Children Ages 6 to 8: An Eye-Tracking Study. Presentation at the Annual Interdisciplinary Innovation with Impact Exhibition, Pittsburgh, PA.</li><br>
-         
-        <li><sup>*</sup>Moron, S., <sup>*</sup>Noll, E., <sup>*</sup>Zhang, K., <sup>*</sup>Fulton, E., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., <sup>*</sup>Anjur, K., <sup>*</sup>Tan, B., <sup>*</sup>Ang, N., & Eng, C. (2019). Enhancing Executive Function in Preschool Children: Generalizability and Long-term Effects of Cognitive-Motor Training. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
-        
-        <li><sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., <sup>*</sup>Anjur, K., <sup>*</sup>Mester, M., <sup>*</sup>Lee, E., & Eng, C. (2019). Exercise-Based Cognitive Flexibility Training in Virtual Reality. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
-         
-        <li><sup>*</sup>Kim, J., <sup>*</sup>Wen, Y., <sup>*</sup>Yoon, J., <sup>*</sup>Zhao, W., & Eng, C. (2019). Utilizing Infant EEG Brain Patterns to Predict Childhood ADHD. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
-         
-        <li><sup>*</sup>Cao, G., <sup>*</sup>Kim, Y., <sup>*</sup>Shi, X., <sup>*</sup>Yannekis, T., & Eng, C. (2019). Utilizing a Random Forest Learning Algorithm to Predict Whether Streamlined Books Improve Young Students' Reading Comprehension. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
-         
-        <li>Fisher, A., Eng, C., Godwin, K., (2019). The Role of Attention Regulation in Reading Comprehension in Beginning Readers. Learning in a Noisy World: Regulating Children’s Attention at Home and at School Paper Symposium at the Society for Research in Child Development Meeting, Baltimore, MD.</li><br>
-         
-        <li>Godwin, K., Murray, G., Todaro, R., Eng, C., Wildrick, A., Fisher, A. (2019). Design Optimization: Exploration of Book Design and its Effect on Children’s Attention, Decoding, and Comprehension. Presentation at the Society for Research in Child Development Meeting, Baltimore, MD.</li><br>
-         
-        <li>Eng, C., Godwin, K., <sup>*</sup>Boyle, K., & Fisher, A. (2018). Effects of Book Design on Children’s Attention Allocation and Learning: An Eye-tracking Study. Presentation at the International Society for Developmental Psychobiology Meeting, San Diego, CA.</li><br>
-         
-        <li><sup>*</sup>Pocsai, M., Eng, C. (2018). An Exercise-based Interactive Game to Aid Cognition in Young Children. Presentation at The Eberly Center for Teaching Excellence and Educational Innovation’s Teaching and Learning Summit, Pittsburgh, PA.</li><br>
-         
-        <li>Godwin, K., Eng, C., Todaro, R., Murray, G., & Fisher, A. (2018). Examination of the Role of Book Layout, Executive Function, and Processing Speed on Children’s Reading Fluency and Comprehension. Presentation at the Cognitive Science Society Annual Meeting, Madison, WI.</li><br>
-         
-        <li>Eng, C., Tomasic, A., & Thiessen, E. (2018). The Effects of an Interactive Digital Storybook on Children’s Story Comprehension and the Role of Individual Differences in Attention. Presentation at the Annual Innovation with Impact Exhibition, Pittsburgh, PA.</li><br>
-         
-        <li>Eng, C., <sup>*</sup>Patton, L.A., & Bell, M.A. (2018). Infant EEG Power and Coherence: Potential Indicators of Childhood AD/HD. Presentation at The Biennial International Conference on Infant Studies, Philadelphia, PA.</li><br>
-         
-        <li>Fisher, A., Eng, C., & Godwin, K. (2018). Attention Regulation and Learning in Beginning Readers. Presentation at the 6th Biennial Conference of the International Mind, Brain and Education Society, Los Angeles, CA.</li><br>
-         
-        <li><sup>*</sup>Williams, N., <sup>*</sup>Tan, B., <sup>*</sup>Ang, N., <sup>*</sup>Anjur, K., <sup>*</sup>Calkosz, D., & Eng, C. (2018). An “Exergame” Intervention to Aid Inhibitory Control Development in Preschool Children. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
-         
-        <li><sup>*</sup>Calkosz, D., <sup>*</sup>Tan, B., <sup>*</sup>Ang, N., <sup>*</sup>Lee, Y., & Eng, C. (2018). Optimizing Data Collection and Assessment of Inhibitory Control in Preschool Children. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
-         
-        <li><sup>*</sup>Tang, G., <sup>*</sup>Tan, B., & Eng, C. (2018). Detecting Signs of ADHD in Infancy. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
-         
-        <li>Eng, C., Tomasic, A., & Thiessen, E. (2017). The Effects of an Interactive Digital Storybook on Children’s Story Comprehension and the Role of Individual Differences in Attention. Presentation at the Cognitive Development Society Conference, Portland, OH.</li><br>
-         
-        <li>Godwin, K., Eng, C., & Fisher, A. (2017). Effect of Proximity of Illustrations to Text on Beginning Readers Fluency and Comprehension. Presentation at the Cognitive Development Society Conference, Portland, OH.</li><br>
-         
-        <li>Eng, C., <sup>*</sup>Boyle, K., & Fisher, A. (2017). Illustration Design and Beginning Readers’ Attention Allocation and Comprehension. Presentation at The Eberly Center for Teaching Excellence and Educational Innovation’s Teaching and Learning Summit, Pittsburgh, PA.</li><br>
-        
-        <li>Eng, C., Tomasic, A., & Thiessen, E. (2017). Traditional Storybooks vs. Interactive iPads: Effects on Infant Vocalizations. Presentation at the Jean Piaget Society Annual Meeting: Technologies & Human Development, San Francisco, CA.</li><br>
-        
-        <li>Eng, C. & Bell, M.A. (2017). Attention-related EEG and Behavior in Infancy: Potential Indicators of Childhood AD/HD. Presentation at the Annual Innovation with Impact Exhibition, Pittsburgh, PA.</li><br>
-        
-        <li>Eng, C., <sup>*</sup>Patton, L.A., & Bell, M.A. (2016). Infant Attention & Corresponding EEG: Potential Indicators of Childhood AD/HD. Presentation at the International Society for Developmental Psychobiology, San Diego, CA.</li><br>
-        
-        <li>Eng, C., <sup>*</sup>Patton, L.A., & Bell, M.A. (2016). Infant brain and behavior during an attention task: Potential biomarkers of Childhood AD/HD. Presentation at the Virginia-Nordic Precision Neuroscience Conference, Roanoke VA.</li><br>
-        
-        <li>Eng, C., Calkins, S., & Bell, M.A. (2016). Sex Differences in Attention Behavior and Attention-Related EEG at 5 and 10 Months. Presentation at the Biennial International Conference on Infant Studies, New Orleans, LA.</li><br>
-        
-        <li> Pawlo, E., Eng, C., Lakshmanan, G., DiDonato, M., Schloss, B., Bryk, K., & Berenbaum, S. (2015). Is Personality Related to Timing of Participation in Psychology Studies? Presentation at the International Honor Society in Psychology Psi Chi Research Conference, University Park, PA.</li><br>
-        </ol>
-        
+            <li>Eng, C. (2019). Education and the Brain, a Bridge Not Too Far: Game-Based Assessment and Neuroplasticity. Invited Speaker at the National Science Foundation (NSF)-sponsored Conference: Game-based Assessment: An Interdisciplinary Workshop Integrating Organizations, Education, and Assessment, Minneapolis, MN.  </li><br>
+            
+            <li>Eng, C., <sup>*</sup>Pocsai, M., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., Thiessen, E., & Fisher, A. (2019). Effects of Cognitive-Motor Training on Executive Function and Resting Prefrontal Cortex Connectivity in Preschool Children: an fNIRS Study. Presentation at the Annual Society for Neuroscience Meeting, Chicago, IL.</li><br>
+            
+            <li><sup>*</sup>Tsegai-Moore, A., Fisher, A., & Eng, C. (2019). Cognitive Game-based Assessment Performance, Educational Outcomes, and Prefrontal Cortex Connectivity. Presentation at the Annual Biomedical Research Conference for Minority Students, Anaheim, CA. </li><br>
+            
+            <li><sup>*</sup>Stanley, O., <sup>*</sup>Boyle, K., Fisher, A., & Eng, C. (2019). The Effects of Book Design on Beginning Reader’s Visual Attention and Reading Comprehension: An Eye-Tracking Study. Presentation at The Eberly Center for Teaching Excellence and Educational Innovation’s Teaching and Learning Summit, Pittsburgh, PA. </li><br>
+            
+            <li>Eng, C., <sup>*</sup>Pocsai, M., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., Fisher, A., & Thiessen, E. (2019). Effects of Exergame Training on Executive Function and Resting Prefrontal Cortex Connectivity in Preschool Children: an fNIRS Study. Presentation at the International Society for Developmental Psychobiology, Chicago, IL.</li><br>
+            
+            <li>Eng, C. (2019). The Effects of Cognitive-Motor Training on Resting State Prefrontal Cortex Connectivity and Executive Function in Preschool Children. Presentation at the University of Pittsburgh Graduate School of Public Health Training Grant Retreat in Population Neuroscience, Pittsburgh, PA.</li><br>
+            
+            <li>Eng, C., Godwin, K., <sup>*</sup>Boyle, K., & Fisher, A. (2019). Effects of Book Design on 1st and 2nd Grade Children’s Attention and Learning. Presentation at the Society for Research in Child Development Meeting, Baltimore, MD.</li><br>
+            
+            <li>Eng, C., Godwin, K., <sup>*</sup>Boyle, K., & Fisher, A. (2019). Effects of Book Design on Attention and Reading Comprehension Among Children Ages 6 to 8: An Eye-Tracking Study. Presentation at the Annual Interdisciplinary Innovation with Impact Exhibition, Pittsburgh, PA.</li><br>
+            
+            <li><sup>*</sup>Moron, S., <sup>*</sup>Noll, E., <sup>*</sup>Zhang, K., <sup>*</sup>Fulton, E., <sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., <sup>*</sup>Anjur, K., <sup>*</sup>Tan, B., <sup>*</sup>Ang, N., & Eng, C. (2019). Enhancing Executive Function in Preschool Children: Generalizability and Long-term Effects of Cognitive-Motor Training. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
+            
+            <li><sup>*</sup>Williams, N., <sup>*</sup>Calkosz, D., <sup>*</sup>Anjur, K., <sup>*</sup>Mester, M., <sup>*</sup>Lee, E., & Eng, C. (2019). Exercise-Based Cognitive Flexibility Training in Virtual Reality. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
+            
+            <li><sup>*</sup>Kim, J., <sup>*</sup>Wen, Y., <sup>*</sup>Yoon, J., <sup>*</sup>Zhao, W., & Eng, C. (2019). Utilizing Infant EEG Brain Patterns to Predict Childhood ADHD. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
+            
+            <li><sup>*</sup>Cao, G., <sup>*</sup>Kim, Y., <sup>*</sup>Shi, X., <sup>*</sup>Yannekis, T., & Eng, C. (2019). Utilizing a Random Forest Learning Algorithm to Predict Whether Streamlined Books Improve Young Students' Reading Comprehension. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
+            
+            <li>Fisher, A., Eng, C., Godwin, K., (2019). The Role of Attention Regulation in Reading Comprehension in Beginning Readers. Learning in a Noisy World: Regulating Children’s Attention at Home and at School Paper Symposium at the Society for Research in Child Development Meeting, Baltimore, MD.</li><br>
+            
+            <li>Godwin, K., Murray, G., Todaro, R., Eng, C., Wildrick, A., Fisher, A. (2019). Design Optimization: Exploration of Book Design and its Effect on Children’s Attention, Decoding, and Comprehension. Presentation at the Society for Research in Child Development Meeting, Baltimore, MD.</li><br>
+            
+            <li>Eng, C., Godwin, K., <sup>*</sup>Boyle, K., & Fisher, A. (2018). Effects of Book Design on Children’s Attention Allocation and Learning: An Eye-tracking Study. Presentation at the International Society for Developmental Psychobiology Meeting, San Diego, CA.</li><br>
+            
+            <li><sup>*</sup>Pocsai, M., Eng, C. (2018). An Exercise-based Interactive Game to Aid Cognition in Young Children. Presentation at The Eberly Center for Teaching Excellence and Educational Innovation’s Teaching and Learning Summit, Pittsburgh, PA.</li><br>
+            
+            <li>Godwin, K., Eng, C., Todaro, R., Murray, G., & Fisher, A. (2018). Examination of the Role of Book Layout, Executive Function, and Processing Speed on Children’s Reading Fluency and Comprehension. Presentation at the Cognitive Science Society Annual Meeting, Madison, WI.</li><br>
+            
+            <li>Eng, C., Tomasic, A., & Thiessen, E. (2018). The Effects of an Interactive Digital Storybook on Children’s Story Comprehension and the Role of Individual Differences in Attention. Presentation at the Annual Innovation with Impact Exhibition, Pittsburgh, PA.</li><br>
+            
+            <li>Eng, C., <sup>*</sup>Patton, L.A., & Bell, M.A. (2018). Infant EEG Power and Coherence: Potential Indicators of Childhood AD/HD. Presentation at The Biennial International Conference on Infant Studies, Philadelphia, PA.</li><br>
+            
+            <li>Fisher, A., Eng, C., & Godwin, K. (2018). Attention Regulation and Learning in Beginning Readers. Presentation at the 6th Biennial Conference of the International Mind, Brain and Education Society, Los Angeles, CA.</li><br>
+            
+            <li><sup>*</sup>Williams, N., <sup>*</sup>Tan, B., <sup>*</sup>Ang, N., <sup>*</sup>Anjur, K., <sup>*</sup>Calkosz, D., & Eng, C. (2018). An “Exergame” Intervention to Aid Inhibitory Control Development in Preschool Children. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
+            
+            <li><sup>*</sup>Calkosz, D., <sup>*</sup>Tan, B., <sup>*</sup>Ang, N., <sup>*</sup>Lee, Y., & Eng, C. (2018). Optimizing Data Collection and Assessment of Inhibitory Control in Preschool Children. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
+            
+            <li><sup>*</sup>Tang, G., <sup>*</sup>Tan, B., & Eng, C. (2018). Detecting Signs of ADHD in Infancy. Presentation at Carnegie Mellon University’s Meeting of the Minds Undergraduate Research Symposium, Pittsburgh, PA.</li><br>
+            
+            <li>Eng, C., Tomasic, A., & Thiessen, E. (2017). The Effects of an Interactive Digital Storybook on Children’s Story Comprehension and the Role of Individual Differences in Attention. Presentation at the Cognitive Development Society Conference, Portland, OH.</li><br>
+            
+            <li>Godwin, K., Eng, C., & Fisher, A. (2017). Effect of Proximity of Illustrations to Text on Beginning Readers Fluency and Comprehension. Presentation at the Cognitive Development Society Conference, Portland, OH.</li><br>
+            
+            <li>Eng, C., <sup>*</sup>Boyle, K., & Fisher, A. (2017). Illustration Design and Beginning Readers’ Attention Allocation and Comprehension. Presentation at The Eberly Center for Teaching Excellence and Educational Innovation’s Teaching and Learning Summit, Pittsburgh, PA.</li><br>
+            
+            <li>Eng, C., Tomasic, A., & Thiessen, E. (2017). Traditional Storybooks vs. Interactive iPads: Effects on Infant Vocalizations. Presentation at the Jean Piaget Society Annual Meeting: Technologies & Human Development, San Francisco, CA.</li><br>
+            
+            <li>Eng, C. & Bell, M.A. (2017). Attention-related EEG and Behavior in Infancy: Potential Indicators of Childhood AD/HD. Presentation at the Annual Innovation with Impact Exhibition, Pittsburgh, PA.</li><br>
+            
+            <li>Eng, C., <sup>*</sup>Patton, L.A., & Bell, M.A. (2016). Infant Attention & Corresponding EEG: Potential Indicators of Childhood AD/HD. Presentation at the International Society for Developmental Psychobiology, San Diego, CA.</li><br>
+            
+            <li>Eng, C., <sup>*</sup>Patton, L.A., & Bell, M.A. (2016). Infant brain and behavior during an attention task: Potential biomarkers of Childhood AD/HD. Presentation at the Virginia-Nordic Precision Neuroscience Conference, Roanoke VA.</li><br>
+            
+            <li>Eng, C., Calkins, S., & Bell, M.A. (2016). Sex Differences in Attention Behavior and Attention-Related EEG at 5 and 10 Months. Presentation at the Biennial International Conference on Infant Studies, New Orleans, LA.</li><br>
+            
+            <li> Pawlo, E., Eng, C., Lakshmanan, G., DiDonato, M., Schloss, B., Bryk, K., & Berenbaum, S. (2015). Is Personality Related to Timing of Participation in Psychology Studies? Presentation at the International Honor Society in Psychology Psi Chi Research Conference, University Park, PA.</li><br>
+          </ol>
+        </div>
+      </div>
+      <hr>
     </div>
-</div>
-        <!-- The Footer -->
-        <footer class="footer">
-            <div class="container" id="footertext">
-                <span class="text-muted">Website by Marie Shaw, Dominic Calkosz and Sebastian Yang</span>
-            </div>
-        </footer>
+
+    <!-- The Footer -->
+    <footer class="footer">
+        <div class="container" id="footertext">
+            <span class="text-muted">Website by Marie Shaw, Dominic Calkosz, Sebastian Yang, Maanasi Bulusu, and George Whitfield, Jr.</span>
+        </div>
+    </footer>
     
 
-    <!-- jQuery (Bootstrap JS plugins depend on it) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Popper, JQuery BootstrapJS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
 </html>

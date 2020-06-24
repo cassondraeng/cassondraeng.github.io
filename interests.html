@@ -18,139 +18,327 @@ gtag('config', 'UA-127639225-2');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cassie Eng</title>
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-</head>
+
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: relative;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: black;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: relative;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .img-container {
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: black;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: relative;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .button {
+      background-color: black;
+      border:none;
+      color: white;
+      padding: 30px 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 4px;
+      cursor: pointer;
+      float: center;
+      width: 175px
+    }
+      .active, .dot:hover {
+        background-color: #717171;
+        opacity: 1;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 8000s;
+        animation-name: fade;
+        animation-duration: 8000s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: 1}
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: 1}
+        to {opacity: 1}
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+      </style>
+  </head>
 <body>
 
     <!-- The Header -->
-    <div class="jumbotron">
-        <h1>Cassie Eng</h1>
-        <div id="header-info">
-            <b>Ph.D. Candidate at Carnegie Mellon University</b> with a focus in Developmental Psychology and Cognitive Neuroscience <br>
-            <a href="https://www.cmu.edu/pier/index.html">Program in Interdisciplinary Education Research</a> (PIER) Training Fellow <br>
-            <a href="http://www.cnbc.cmu.edu/training/graduate/cnbc-grad-training-program/">Center for the Neural Basis of Cognition </a> (CNBC) Training Fellow <br>
-            Email: cassonde@andrew.cmu.edu
-        </div>
+    <div class="image-background" style="background-image:url(images/diffusionimaging.jpg);">
+      <div class="image-overlay-text">
+        <h1 class="vertical-center">Art</h1>
+      </div>
     </div>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">About Me</a></li>
-    
-            <li class="dropdown" >
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="current.html">Current</a></li>
-                <li><a href="past.html">Prior</a></li>
-              </ul>
-              </li>
-    
-            <li class="active"><a href="interests.html">Innovation</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="team.html">Meet the Team!</a></li>
-              <li><a href="scavenger.html">Team Building</a></li>
+    <nav class="navbar navbar-default" style = "background-color: #525252 ">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html" class="button" style = "color:white">About Me</a></li>
+
+          <li class="nav navbar-nav">
+            <a class="button" data-toggle="dropdown"  style = "color:white" href="#">Research
+            <span class="caret"  style = "color:black"></span></a>
+            <ul class="dropdown-menu" style = "color:black">
+              <li><a href="current.html">Current</a></li>
+              <li><a href="past.html">Prior</a></li>
             </ul>
             </li>
-            
-            <li><a href="diversity.html">Diversity & Inclusion</a></li>
+
+          <li><a href="interests.html" class = "button"  style = "color:white" >Innovation</a></li>
+          <li ><a href="publications.html" class = "button"  style = "color:white" >Publications</a></li>
+          <li class="nav navbar-nav">
+          <a class="button" data-toggle="dropdown"  style = "color:white" href="#">Team
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="team.html">Meet the Team!</a></li>
+            <li><a href="scavenger.html">Team Building</a></li>
           </ul>
-        </div>
-      </nav>
+          </li>
+
+          <li><a href="diversity.html" class = "button"  style = "color:white">Diversity & Inclusion</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- The Content -->
-    <div class="container-fluid">
-
-        <!-- Interests -->
-        <div class="row">
-            <div class="col-md-8 freetime">
+    <div class="container">
+        <!-- Novel Interdisciplinary Approach -->
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-md-10 p-5">
                 <h1>A Novel Interdisciplinary Approach</h1>
-                <p>When I'm not conducting research, I'm a group fitness instructor for <a href="https://www.lesmills.com/about-us/">Les Mills</a>, a program offered in 100 countries around the world. What differentiates this exercise program from others is that the routines are designed through scientifically-based research through collaboration with kinesiologists and exercise physiologists.</p>
-                <div class="col-md-4">
-                    <img src="images/fitness.jpg" class="img-thumbnail" alt="Cassie as a fitness instructor">
-                </div>
-                <p>Recent research has converged on an intriguing finding: exercise through interaction with a virtual environment improves cognitive skills that are particularly important for academic achievement and success.</p>
+                <p>When I'm not conducting research, I'm a group fitness 
+                instructor for <a href="https://www.lesmills.com/about-us/">Les Mills</a>, 
+                a program offered in 100 countries around the world. What differentiates 
+                this exercise program from others is that the routines are designed through 
+                scientifically-based research through collaboration with kinesiologists and 
+                exercise physiologists.</p>
+                <br>
 
-                <p>School time dedicated to recess has dwindled and few children receive the recommended amount of physical activity. Technology use is prevalent in almost every aspect of K-12 education, and on average, children ages 2- to 4-years old play digital games for 21 minutes daily. As the use of digital games in young childhood vastly increases, effective interventions for fostering cognitive skills raise great interest. Exergames are a generation of widely availble video games that promote both cognitive and motor stimulation. Exergames can easily be implemented in everyday lifestyles and have high potential to benefit cognitive skills that are crucial for academic success for students. Exergames are also ideal for use by children because they contain nonviolent content, may be especially useful for children from low socioeconomic households who may not have access to safe recreational equipment, and for children with negative perceptions of exercising around others because exergames continuously adapt the difficulty level based on performance and match children’s individual capabilities.</p>
+                <img src="images/fitness.jpg" class="img-thumbnail" alt="Cassie as a fitness instructor">
 
-                <p>Cognitive function interventions are used as remediation or prevention of cognitive deficits, so <b>early intervention is crucial</b>; yet little research has conducted training interventions involving exergames with children below school-age. Currently, I am investigating whether exergame-induced training before entering formal schooling may enhance the functioning of cognitive skills, and with carefully controlled experiments determine the underlying mechanisms of <i>why</i>.</p>
+                <p><br>
+                Recent research has converged on an intriguing finding: exercise through 
+                interaction with a virtual environment improves cognitive skills that are
+                 particularly important for academic achievement and success.</p>
+
+                <p>School time dedicated to recess has dwindled and few 
+                children receive the recommended amount of physical activity. Technology 
+                use is prevalent in almost every aspect of K-12 education, and 
+                on average, children ages 2- to 4-years old play digital games for
+                 21 minutes daily. As the use of digital games in young childhood 
+                 vastly increases, effective interventions for fostering cognitive 
+                 skills raise great interest. Exergames are a generation of widely 
+                 availble video games that promote both cognitive and motor stimulation.
+                  Exergames can easily be implemented in everyday lifestyles and have 
+                  high potential to benefit cognitive skills that are crucial for 
+                  academic success for students. Exergames are also ideal for use 
+                  by children because they contain nonviolent content, may be especially
+                   useful for children from low socioeconomic households who 
+                   may not have access to safe recreational equipment, and for 
+                   children with negative perceptions of exercising around others 
+                   because exergames continuously adapt the difficulty level based 
+                   on performance and match children’s individual capabilities.</p>
+
+                <p>Cognitive function interventions are used as remediation or 
+                prevention of cognitive deficits, so <b>early intervention is 
+                crucial</b>; yet little research has conducted training interventions 
+                involving exergames with children below school-age. Currently,
+                 I am investigating whether exergame-induced training before entering 
+                 formal schooling may enhance the functioning of cognitive skills,
+                  and with carefully controlled experiments determine the 
+                  underlying mechanisms of <i>why</i>.</p>
             </div>
         </div>
 
         <!-- The fifth row -->
-        <div class="row">
+      <div class="row">
             <div class="col-md-12">
                 <h2><a href="https://www.nature.com/articles/d41586-018-05449-7?utm_source=briefing-dy&utm_medium=email&utm_campaign=briefing&utm_content=20180619">Hobbies improve work–life balance, increase productivity, and help scientists reach creative solutions in their work.</a></h2>
                 <p>My hobbies include sculpting, drawing, and painting-usually inspired by data visuals and brain images produced by researchers in the field I look up to.</p>
             </div>
-            <p>
-                <div class="col-md-4 col-sm-6">
-                    <img src="images/lobectomies.jpg" class="img-thumbnail">
-                    <h2{font-size: .85em}><b>Brain Lobectomies</b> from the Behrmann Laboratory: Fauvism inspired acrylic on canvas. This piece was donated to <b><i>Mindscapes</b></i>: an exhibition held to reduce misconceptions and stigma surrounding mental health. The proceeds from the scientific artwork sold at this event were donated to charities that specialize in mental health services for under-served communities, ranging from counseling and suicide prevention programs, and also to the LGBTQ community. </h2>
-                </p>
             </div>
-            <p>
-                <div class="col-md-4 col-sm-6">
-                    <img src="images/diffusionimaging.jpg" class="img-thumbnail">
-                    <h2{font-size: .85em}><b>Diffusion Tensor Brain Imaging</b> from the CoAx Laboratory: Split canvas on mixed media</h2>
-                </p>
-            </div>
-            <p>
-                <div class="col-md-4 col-sm-6">
-                    <img src="images/sculpture.gif" class="img-thumbnail" alt="Cassie with a sculpture she made out of electronic parts">
-                    <h2{font-size: .85em}>"The MacWhinster:" engineered from <b>1000+ recyclable computer parts </b> from Carnegie Mellon's Computer Science Department. </h2>
-                </p>
-            </div>
-            <p>
-                <div class="col-md-4 col-sm-6">
-                    <img src="images/ChristopherMillard_Ink_Eng.jpg" class="img-thumbnail">
-                    <h2{font-size: .85em}><b>F</b>or <b>T</b>he <b>K</b>ids represents Penn State's THON: the largest student-run philanthropy in the world for the fight against pediatric cancer</h2>
-                </p>
-            </div>
-            <p>
-                <div class="col-md-4 col-sm-6">
-                    <img src="images/sockmonster.jpg" class="img-thumbnail">
-                    <h2{font-size: .85em}>Ever wonder where your socks disappear to? I have a theory...</h2>
-                </p>
-            </div>
-            <p>
-            <div class="col-md-4 col-sm-6">
-                    <img src="images/RP.gif" class="img-thumbnail">
-                    <h2{font-size: .85em}><b>Tonotopic Maps Across the Auditory Cortex</b>: Reverse Perspective 3D Painting from the Holt Lab</h2>
-                </p>
-            </div>
-            <p>
-            <div class="col-md-4 col-sm-6">
-                    <img src="images/kevinjarbo.jpg" class="img-thumbnail">
-                    <h2{font-size: .85em}><b>Convergence Colorized: Warhol inspired Acrylic on Canvas modeled from Diffusion Spectrum Imaging modeled on research by</b> <a href="https://www.kevinjarbo.com/">Kevin Jarbo</a>. Until the work by Jarbo and Verstynen, the evidence for convergent corticostriatal projections had not been verified by visualizing white matter connectivity of a live human brain</h2>
-                </p>
-            </div>
-            <div class="col-md-12">
-                <br>
-                <p> Historically, the disciplines of exercise physiology, developmental psychology and cognitive science, art and technology have had little interaction together despite being able to answer important questions when molded together. I'm bringing together these disciplines in my on-going research to contribute to the fields and make an impact on the community.</p>
-            </div>
+
+
+          <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="img-container">
+            <img src="images/lobectomies.jpg" style="width:40%">
+            <div class="text">Brain Lobectomies from the Behrmann Laboratory: Fauvism inspired acrylic on canvas. This piece was donated to Mindscapes: an exhibition held to reduce misconceptions and stigma surrounding mental health. The proceeds from the scientific artwork sold at this event were donated to charities that specialize in mental health services for under-served communities, ranging from counseling and suicide prevention programs, and also to the LGBTQ community.</div>
+          </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="img-container">
+            <img src="images/diffusionimaging.jpg" style="width:40%">
+            <div class="text">Diffusion Tensor Brain Imaging from the CoAx Laboratory: Split canvas on mixed media</div>
+          </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="img-container">
+            <img src="images/sculpture.gif" style="width:30%">
+            <div class="text">"The MacWhinster:" engineered from 1000+ recyclable computer parts from Carnegie Mellon's Computer Science Department.</div>
+          </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="img-container">
+            <img src="images/ChristopherMillard_Ink_Eng.jpg" style="width:50%">
+            <div class="text">For The Kids represents Penn State's THON: the largest student-run philanthropy in the world for the fight against pediatric cancer</div>
+          </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="img-container">
+            <img src="images/sockmonster.jpg" style="width:20%">
+            <div class="text">Ever wonder where your socks disappear to? I have a theory...</div>
+          </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="img-container">
+            <img src="images/RP.gif" style="width:50%">
+            <div class="text">Tonotopic Maps Across the Auditory Cortex: Reverse Perspective 3D Painting from the Holt Lab</div>
+          </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="img-container">
+            <img src="images/kevinjarbo.jpg" style="width:40%">
+            <div class="text">Convergence Colorized: Warhol inspired Acrylic on Canvas modeled from Diffusion Spectrum Imaging modeled on research by Kevin Jarbo. Until the work by Jarbo and Verstynen, the evidence for convergent corticostriatal projections had not been verified by visualizing white matter connectivity of a live human brain</div>
+          </div>
+          </div>
         </div>
 
-
-        <!-- The Footer -->
-        <footer class="footer">
-            <div class="container" id="footertext">
-                <span class="text-muted">Website by Marie Shaw, Dominic Calkosz and Sebastian Yang</span>
-            </div>
-        </footer>
+    <hr>
     </div>
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+      <p>Historically, the disciplines of exercise physiology, developmental psychology and cognitive science, art and technology have had little interaction together despite being able to answer important questions when molded together. I'm bringing together these disciplines in my on-going research to contribute to the fields and make an impact on the community.</p>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+
 
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- The Footer -->
+    <footer class="footer">
+        <div class="container" id="footertext">
+            <span class="text-muted">Website by Marie Shaw, Dominic Calkosz and Sebastian Yang</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+       
+
 
 </body>
 </html>
