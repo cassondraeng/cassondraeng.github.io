@@ -18,14 +18,12 @@ gtag('config', 'UA-127639225-2');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cassie Eng</title>
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
 <style>
   * {box-sizing: border-box}
-  .mySlides1, .mySlides2 {display: none}
+  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
   img {vertical-align: middle;}
 
   /* Slideshow container */
@@ -39,256 +37,271 @@ gtag('config', 'UA-127639225-2');
     text-align: center;
   }
 
-  /* Caption text */
-  .text {
-    color: black;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: relative;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .button {
-  background-color: black;
-  border:none;
-  color: white;
-  padding: 30px 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 4px;
-  cursor: pointer;
-  float: center;
-  width: 175px
+  /* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color:black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+	background-color: #f1f1f1;
+	color: black;
 }
 
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  /* On hover, add a grey background color */
-  .prev:hover, .next:hover {
-    background-color: #f1f1f1;
-    color: black;
-  }
-
-  </style>
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+	background-color: #717171;
+}
+</style>
 </head>
 
 
 <body>
-  <!-- The Header -->
-  <div class="jumbotron">
-      <h1>Cassie Eng</h1>
-      <div id="header-info">
-          <b>Ph.D. Candidate at Carnegie Mellon University</b> with a focus in Developmental Psychology and Cognitive Neuroscience <br>
-          <a href="https://www.cmu.edu/pier/index.html">Program in Interdisciplinary Education Research</a> (PIER) Training Fellow <br>
-          <a href="http://www.cnbc.cmu.edu/training/graduate/cnbc-grad-training-program/">Center for the Neural Basis of Cognition </a> (CNBC) Training Fellow <br>
-          Email: cassonde@andrew.cmu.edu
+
+    <!-- The Header -->
+    <div class="image-background" style="background-image:url(images/ImageC3-C4.png);">
+      <div class="image-overlay-text">
+        <h1 class="vertical-center">Current Research</h1>
       </div>
-  </div>
-
-  <nav class="navbar navbar-default" style = "background-color: #525252 ">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html" class="button" style = "color:white">About Me</a></li>
-
-        <li class="nav navbar-nav">
-          <a class="button" data-toggle="dropdown"  style = "color:white" href="#">Research
-          <span class="caret"  style = "color:black"></span></a>
-          <ul class="dropdown-menu" style = "color:black">
-            <li><a href="current.html">Current</a></li>
-            <li><a href="past.html">Prior</a></li>
-          </ul>
-          </li>
-
-        <li><a href="interests.html" class = "button"  style = "color:white" >Innovation</a></li>
-        <li ><a href="publications.html" class = "button"  style = "color:white" >Publications</a></li>
-        <li class="nav navbar-nav">
-        <a class="button" data-toggle="dropdown"  style = "color:white" href="#">Team
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="team.html">Meet the Team!</a></li>
-          <li><a href="scavenger.html">Team Building</a></li>
-        </ul>
-        </li>
-
-        <li><a href="diversity.html" class = "button"  style = "color:white">Diversity & Inclusion</a></li>
-      </ul>
     </div>
-  </nav>
+
+    <!-- The Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About Me<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Research
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="current.html">Current</a>
+                <a class="dropdown-item" href="prior.html">Prior</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="art.html">Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Team
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="team.html">Meet the team!</a>
+                <a class="dropdown-item" href="teambuilding.html">Team building</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="diversity.html">Diversity & Inclusion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- The Content -->
-    <div class="container-fluid">
+    <div class="container">
+    <hr>
+    
+    <div class="row justify-content-center p-5">
+    <div class="col-md-10" id="current">
+      <h1>Current Research at Carnegie Mellon University</h1>
+      <h2>August 2016-present</h2>
+      <h3>Advisors: Dr. Anna Fisher & Dr. Erik Thiessen</h3>
+      <h4><a href="https://sites.google.com/andrew.cmu.edu/cogdevlab">Cognitive Development Lab</a></h4>
+      <h4><a href="https://www.cmu.edu/dietrich/psychology/infant-language-learning-lab/">Infant Language and Learning Lab</a></h4>
+    </div>
+  </div>
+      
+      <h2>Check out my Current Studies:</h2>
+        <ul>
+        <li><h3><a href="#Exergame"> The Exergame Study</a></h3></li>
+        <li><h3><a href="#Nirs">The Longitudinal Noninvasive NeuroImaging Study</h3></li>
+        <li><h3><a href="#Beatsaber">The Virtual Reality Neuroplasticity Study</a></h3></li>
+        <li><h3><a href="#Reading">The Reading Study</a></h3></li>
+        <li><h3><a href="#Ipad">The Interactive Ipad Study</a></h3></li>
+        </ul>
 
-
-<!-- Current Research -->
-        <div class="row">
-
-            <div class="col-md-9 col-sm-6" id="current">
-                <h1>Current Research at Carnegie Mellon University</h1>
-                <h2>August 2016-present</h2>
-                <h3>Advisors: Dr. Anna Fisher & Dr. Erik Thiessen</h3>
-                <h4><a href="https://sites.google.com/andrew.cmu.edu/cogdevlab">Cognitive Development Lab</a></h4>
-                <h4><a href="https://www.cmu.edu/dietrich/psychology/infant-language-learning-lab/">Infant Language and Learning Lab</a></h4>
-
-
-                <div class="row">
-
-                  <h2>    Exergame Study:</h2>
-                  <div class="slideshow-container">
-                    <div class="mySlides1">
-                      <div class="img-container">
-                      <img src="images/ImageC1.png" style = "width:30%">
-                      <div class="text">Developed an exercise-based interactive game to enhance cognition in 4- to 5-year-olds.</div>
-                    </div>
-                    </div>
-
-                    <div class="mySlides1">
-                      <div class="img-container">
-                      <img src="images/exergame.gif" style = "width:70%">
-                      <div class="text">Using fNIRS to examine the short- and long-term associations between exercise-induced training, functional brain connectivity, cognitive control, and later academic achievement in youth
-                      </div>
-                    </div>
-                    </div>
-                    
-                    <div class="mySlides1">
-                      <div class="img-container">
-                      <img src="images/exer.png" style = "width:100%">
-                      <div class="text">More Exergame study photos!
-                      </div>
-                    </div>
-                    </div>
-
-                    <div class="mySlides1">
-                      <div class="img-container">
-                      <img src="images/ImageC2.gif" style = "width:60%">
-                      <div class="text">Using fNIRS to examine the short- and long-term associations between exercise-induced training, functional brain connectivity, cognitive control, and later verbal abilities in 4- to 5-year-olds.</div>
-                    </div>
-                    </div>
-                    
-                    <div class="mySlides1">
-                      <div class="img-container">
-                      <img src="images/brainer.png" style = "width:50%">
-                      <div class= "text">Using fNIRS to examine the short- and long-term associations between exercise-induced training, functional brain connectivity, cognitive control, and later academic achievement in youth
-                      </div>
-                      </div>
-                    </div>
-
-                    <div class="mySlides1">
-                      <div class="img-container">
-                      <img src="images/ImageC3-C4.png" style = "width:70%">
-                      <div class="text">Modifying commercially available physically active video games in virtual reality (VR) to improve attention regulation and neuroplasticity in youth
-                      </div>
-                    </div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      <div class="row justify-content-center p-5">
+        <div class="col-md-10">
+            <h2 id="Exergame" class="horizontal-center">Exergame Study:</h2>
+            <p>Exergames are a new generation of video games that stimulate cognitive and motor functions simultaneously: the digital interface requires participants to interact with the virtual environment through body movements. This study examines the separate and combined effects of exercise and cognitive training on children’s executive function (EF) and associated neural substrates. Children participate in an Exergame (exercise + cognitive activity), Exercise (physical activity), Sedentary (cognitive activity), or Control (no-play) Condition. Resting-state prefrontal cortex connectivity utilizing fNIRS, behavioral assessments of EF, and teacher ratings of EF were assessed pre- and posttest. This study examines whether the combination of cognitive and exercise stimulation modulates the effects on EF and elucidates the neural mechanisms underlying the changes in EF induced from exergame play.</p>
+            <div class="slideshow-container">
+              <div class="mySlides1"> 
+                <div class="img-container">
+                  <img src="images/ImageC1.png" style = "width:30%">
+                  <div class="text">Developed an exercise-based interactive game to enhance cognition in 4- to 5-year-olds.</div>
                   </div>
-
-                  <h2>     Reading Study:</h2>
-                  <div class="slideshow-container">
-                    <div class="mySlides2">
-                      <div class="img-container">
-                      <img src="images/reading1.png" style = "width:70%">
-                      <div class="text">Examining the impact of varying visual presentations in educational e-books on first and second graders’ developing reading skills and utilizing eye-tracking technology to extract eye-gaze patterns and investigate the attention allocation of beginning readers. 
-                      </div>
-                    </div>
-                    </div>
-
-                    <div class="mySlides2">
-                      <div class="img-container">
-                      <img src="images/reading2.png" style = "width:80%">
-                      <div class="text">Examining the impact of varying visual presentations in educational e-books on first and second graders’ developing reading skills and utilizing eye-tracking technology to extract eye-gaze patterns and investigate the attention allocation of beginning readers. 
-                      </div>
-                    </div>
-                    </div>
-
-                    <div class="mySlides2">
-                      <div class="img-container">
-                      <img src="images/reading3.png" style = "width:80%">
-                      <div class="text">Examining the impact of varying visual presentations in educational e-books on first and second graders’ developing reading skills and utilizing eye-tracking technology to extract eye-gaze patterns and investigate the attention allocation of beginning readers. 
-                      </div>
-                    </div>
-                    </div>
-
-                    <div class="mySlides2">
-                      <div class="img-container">
-                      <img src="images/5.png" style = "width:70%">
-                      <div class="text">Investigated how to instill the practices of high quality adult-child interactions in interactive digital technologies to improve learning outcomes. </div>
-                      <div class = "text"><a href="https://www.cmu.edu/news/stories/archives/2019/december/animated-books-aid-story-time.html"> Featured in Carnegie Mellon University’s News Highlights</a> and in <a href="https://www.youtube.com/watch?feature=youtu.be&v=jNz3xXWcRzw&app=desktop">The National Science Foundation (NSF) News</a> 
-                      </div>
-                    </div>
-                    </div>
-
-
-
-                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+              <div class="mySlides1"> 
+                <div class="img-container">
+                  <img src="images/exergame.gif" style = "width:70%">
+                  <div class="text">Using fNIRS to examine the short- and long-term associations between exercise-induced training, functional brain connectivity, cognitive control, and later academic achievement in youth
                   </div>
-
-
-                      <script>
-                        var slideIndex = [1,1];
-                        var slideId = ["mySlides1", "mySlides2"]
-                        showSlides(1, 0);
-                        showSlides(1, 1);
-
-                        function plusSlides(n, no) {
-                          showSlides(slideIndex[no] += n, no);
-                        }
-
-                        function showSlides(n, no) {
-                          var i;
-                          var x = document.getElementsByClassName(slideId[no]);
-                          if (n > x.length) {slideIndex[no] = 1}
-                          if (n < 1) {slideIndex[no] = x.length}
-                          for (i = 0; i < x.length; i++) {
-                             x[i].style.display = "none";
-                          }
-                          x[slideIndex[no]-1].style.display = "block";
-                        }
-                        </script>
-
                 </div>
               </div>
+              <div class="mySlides1"> 
+                <div class="img-container">
+                  <img src="images/exer.png" style = "width:100%">
+                  </div>
+                </div>
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a> <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,0)"></span> <span class="dot" onclick="currentSlide(2,0)"></span> <span class="dot" onclick="currentSlide(3,0)"></span> </div>
             </div>
-
-
-        <!-- The Footer -->
-        <footer class="footer">
-            <div class="container" id="footertext">
-                <span class="text-muted">Website by Marie Shaw, Dominic Calkosz, Sebastian Yang</span>
+            
+            <h2 id = "Nirs" class="horizontal-center">The Longitudinal Noninvasive NeuroImaging Study:</h2>
+            <p>This study aims at identifying potential neural substrates that underlie executive function using noninvasive functional near-infrared spectroscopy (fNIRS) to relate neural development to executive function development. The hypothesis guiding the present research is that individual differences in the development of functional brain connectivity give rise to individual differences commonly observed in the trajectories and outcomes of executive function development. This study is a longitudinal, microgenetic study that monitors changes in resting-state prefrontal cortex functional connectivity and executive function abilities of 4- to 5-year-old over multiple time points to investigate the development of executive function skills, resting-state prefrontal cortex functional connectivity, and the association between neural development and executive function development within the same group of children over time. An additional study with adults serves as a replication experiment of prior research to validate an existing resting-state functional connectivity measure utilizing another neuroimaging modality. 
+            </p>
+            <div class="slideshow-container">
+              <div class="mySlides2"> 
+                  <div class="img-container">
+                    <img src="images/ImageC2.gif" style = "width:60%">
+                        <div class="text">Using fNIRS to examine the short- and long-term associations between exercise-induced training, functional brain connectivity, cognitive control, and later verbal abilities in 4- to 5-year-olds.</div>
+                  </div>
+                </div>
+                <div class="mySlides2"> 
+                  <div class="img-container">
+                    <img src="images/brainer.png" style = "width:50%">
+                      <div class= "text">Using fNIRS to examine the short- and long-term associations between exercise-induced training, functional brain connectivity, cognitive control, and later academic achievement in youth
+                      </div>
+                  </div>
+                </div>
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a> <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+              <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,1)"></span> <span class="dot" onclick="currentSlide(2,1)"></span> <span class="dot" onclick="currentSlide(3,1)"></span> </div>
             </div>
-        </footer>
+            
+            <h2 id = "Beatsaber" class="horizontal-center">The Virtual Reality Neuroplasticity Study:</h2>
+            <p>This study examines the effects of immersive virtual experiences on cognition and neuroplasticity in low-income youth by experimentally modifying versions of a popular commercially-available virtual reality game: Beat Saber, with meticulous manipulations to the amount of physical activity and cognitive demands. 
+            </p>
+            <div class="slideshow-container">
+              <div class="mySlides3"> 
+                  <div class="img-container">
+                    <img src="images/kid1.png" style = "width:50%">
+                      <div class="text">Modifying commercially available physically active video games in virtual reality to improve attention regulation in students</div>
+                    </div>
+                  </div>
+              <div class="mySlides3">  
+                  <div class="img-container">
+                    <img src="images/dom1.png" style = "width:70%">
+                    <div class="text">Modifying commercially available physically active video games in virtual reality to improve attention regulation in students</div>
+                    </div>
+                  </div>
+              <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a> <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+              <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,2)"></span> <span class="dot" onclick="currentSlide(2,2)"></span> <span class="dot" onclick="currentSlide(3,2)"></span> </div>
+            </div>
+            
+            <h2 id = "Reading" class="horizontal-center">The Reading Study:</h2>
+            <p>This study uses eye-tracking technology to examine whether extraneous illustrations (entertaining, but nonessential features to comprehend the story)–a design common in beginning reader storybooks–promote attentional competition and hinder reading comprehension in beginning readers. This study provides theoretical insights about design principles for reading materials that can be employed to optimize educational materials and promote literacy development in young children.
+            </p>
+            <div class="slideshow-container">
+              <div class="mySlides4"> 
+                <div class="img-container">
+                  <img src="images/reading1.png" style = "width:70%">
+                      <div class="text">Examining the impact of varying visual presentations in educational e-books on first and second graders’ developing reading skills and utilizing eye-tracking technology to extract eye-gaze patterns and investigate the attention allocation of beginning readers. 
+                      </div>
+                </div>
+              </div>
+              <div class="mySlides4"> 
+                <div class="img-container">
+                  <img src="images/4.png" style = "width:80%">
+                    <div class="text">Examining the impact of varying visual presentations in educational books on first and second graders’ developing reading, learning skills and understandings. Utilizing eye-tracking technology and SMI BeGaze Eyetracking Analysis Software to collect, extract, and analyze gaze shifts, blinks, saccades, fixations, and pupil dilation to investigate attention allocation of beginning readers</div>
+                    </div>
+                </div>
+            
+              <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a> <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+              <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,3)"></span> <span class="dot" onclick="currentSlide(2,3)"></span> <span class="dot" onclick="currentSlide(3,3)"></span> </div>
+            </div>
+            
+            <h2 id = "Ipad" class="horizontal-center">The Interactive Ipad Study</h2>
+            <p>This study found that features in digital books modeled from quality adult-child interactions improve childrens learning and attention in young children.</p>
+            <p><a href="https://www.cmu.edu/news/stories/archives/2019/december/animated-books-aid-story-time.html"> Featured in Carnegie Mellon Universitys News Highlights</a> and in <a href="https://www.youtube.com/watch?feature=youtu.be&v=jNz3xXWcRzw&app=desktop">The National Science Foundation (NSF) News</a> </p>
+            <div class="slideshow-container">
+              <div class="mySlides5"> 
+                <div class="img-container">
+                  <img src="images/5.png" style = "width:70%">
+                  <div class="text">Investigated how to instill the practices of high quality adult-child interactions in interactive digital technologies to improve learning outcomes. </div>
+                  </div>
+                </div>
+              <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a> <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+              <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,4)"></span> <span class="dot" onclick="currentSlide(2,4)"></span> <span class="dot" onclick="currentSlide(3,4)"></span> </div>
+            </div>
+        
+            <script>
+                var slideIndex = [1,1,1,1,1];
+                var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
+                showSlides(1, 0);
+                showSlides(1, 1);
+                showSlides(1, 2);
+                showSlides(1, 3);
+                showSlides(1, 4);
+                
+                function plusSlides(n, no) {
+                  showSlides(slideIndex[no] += n, no);
+                }
+                function currentSlide(n, no) {
+                  showSlides(slideIndex[no] = n, no);
+                }
+                function showSlides(n, no) {
+                  var i;
+                  var x = document.getElementsByClassName(slideId[no]);
+                  if (n > x.length) {slideIndex[no] = 1}    
+                  if (n < 1) {slideIndex[no] = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex[no]-1].style.display = "block";  
+                }
+            </script>
+        </div>
+      </div>
     </div>
+    <hr>
+    <!-- The Footer -->
+    <footer class="footer">
+        <div class="container" id="footertext">
+            <span class="text-muted">Website by Marie Shaw, Dominic Calkosz, Sebastian Yang, Maanasi Bulusu, and George Whitfield, Jr.</span>
+        </div>
+    </footer>
 
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
 </html>
