@@ -89,7 +89,7 @@ and (max-device-width : 1024px) {
 	right: 0;
 	top: 0;
 	z-index: -1;
-	background-attachment:fixed;
+	background-attachment:scroll;
 	background-size: cover;
 	background-position: center;
 	
