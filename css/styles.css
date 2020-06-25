@@ -3,6 +3,18 @@
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* fix background imges on mobile devices */
+/* copied from "How To Fix Background Image Resizing Problem" */
+/* https://www.boldgrid.com/support/troubleshooting/how-to-fix-background-image-resizing-problems/ */
+@media only screen 
+and (max-device-height : 1024px) 
+and (max-device-width : 1024px) {
+    .palette-primary.custom-background,
+    .boldgrid-section.background-fixed {
+        background-attachment: scroll !important;
+    }
+}
+
 /*  Background video and words*/
 .video-overlay {
 	width: 100%;
