@@ -33,8 +33,13 @@
 	font-size: 30px;
 	color: white;
 	text-align: center;
+	overflow: hidden;
+	z-index: -1;
 }
 
+.video-overlay-text a{
+	color:aquamarine;
+}
 
 #background-video {
 	/*  Background video automatic resizing */
