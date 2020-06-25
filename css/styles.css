@@ -30,7 +30,7 @@
 }
 
 .video-overlay-text p{
-	font-size: 30px;
+	font-size: 3vmax;
 	color: white;
 	text-align: center;
 	overflow: hidden;
@@ -44,7 +44,7 @@
 #background-video {
 	/*  Background video automatic resizing */
 	position: fixed;
-	left:0;
+	left:-400;
 	top:-400;
 	min-width: 1300px;
 	min-height: 1000px;
