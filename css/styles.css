@@ -35,6 +35,19 @@
 	text-align: center;
 }
 
+
+#background-video {
+	/*  Background video automatic resizing */
+	position: fixed;
+	left:0;
+	top:-400;
+	min-width: 1300px;
+	min-height: 1000px;
+	width: 150%;
+	height: 150%;
+	z-index: -10;
+  }
+
 .image-overlay-text {
 	position: relative;
 	background: rgba(0, 0, 0, 0.5);
@@ -190,11 +203,3 @@ ul{
 	text-align: right;
 	padding-top: 35px;
 }
-#background-video {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-	z-index: -10;
-  }
