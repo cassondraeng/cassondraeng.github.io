@@ -125,6 +125,18 @@ and (max-device-width : 1024px) {
     transform: translateY(-50%)
 }
 
+.art-btn
+{
+	width: 26vmax;
+	height: 26vmax;
+	border-width: 0;
+    object-fit: cover;
+    cursor:pointer;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+
 hr
 {
     clear:both;
