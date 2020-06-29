@@ -92,9 +92,7 @@ and (max-device-width : 1024px) {
 	background-attachment:scroll;
 	background-size: cover;
 	background-position: center;
-	
 }
-
 
 .row {
   margin-bottom: 15px;
@@ -127,13 +125,15 @@ and (max-device-width : 1024px) {
 
 .art-btn
 {
-	width: 26vmax;
-	height: 26vmax;
+	width: 100%;
+	height: 300px;
 	border-width: 0;
     object-fit: cover;
     cursor:pointer;
 	background-size: cover;
 	background-attachment: scroll;
+	background-position-x: center;
+	background-position: 50%;
 }
 
 
