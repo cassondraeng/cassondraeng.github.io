@@ -92,9 +92,7 @@ and (max-device-width : 1024px) {
 	background-attachment:scroll;
 	background-size: cover;
 	background-position: center;
-	
 }
-
 
 .row {
   margin-bottom: 15px;
