@@ -94,6 +94,13 @@ and (max-device-width : 1024px) {
 	background-position: center;
 }
 
+.img-thumbnail {
+	width: 300px;
+	height: 210px;
+	object-fit: cover;
+	
+}
+
 .row {
   margin-bottom: 15px;
 }
