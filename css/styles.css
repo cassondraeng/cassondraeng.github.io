@@ -94,9 +94,16 @@ and (max-device-width : 1024px) {
 	background-position: center;
 }
 
-.img-thumbnail {
+.img-nephew {
 	width: 300px;
 	height: 210px;
+	object-fit: cover;
+}
+
+
+.img-research-questions {
+	width: 300px;
+	height: 310px;
 	object-fit: cover;
 	
 }
