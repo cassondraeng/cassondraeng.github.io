@@ -77,6 +77,15 @@ and (max-device-width : 1024px) {
 	text-align: center;
 }
 
+.indextext {
+	font-size: 10px;
+}
+
+.captiontext {
+	font-size: 12px !important;
+}
+
+
 .image-overlay-text {
 	font-size: 7vmin;
 }
