@@ -29,9 +29,10 @@ gtag('config', 'UA-127639225-2');
       
     -->
     <style>
-      * {box-sizing: border-box}
-      body {font-family: Verdana, sans-serif; margin:0}
-      .mySlides1, mySlides2 {display: none}
+
+        * {box-sizing: border-box;}
+      body {font-family: Verdana, sans-serif;}
+      .mySlides {display: none;}
       img {vertical-align: middle;}
 
       .column {
@@ -47,12 +48,65 @@ gtag('config', 'UA-127639225-2');
         display: table;
       }
 
+
       /* Slideshow container */
       .slideshow-container {
         max-width: 1000px;
         position: relative;
         margin: auto;
+        text-align: center;
       }
+
+      .text {
+        color: black;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: relative;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+      }
+
+        .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+       .active {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2.5s;
+        animation-name: fade;
+        animation-duration: 2.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: 1} 
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: 1} 
+        to {opacity: 1}
+      }  
+
 
       .img-container {
         text-align: center;
@@ -280,8 +334,13 @@ gtag('config', 'UA-127639225-2');
       <p>Our undergraduate Research Assistants couldn't walk across the stage at graduation, but we know they’re going to change the world. Virtual celebration with the research team army, delivery of ~personalized lab coats~ and cakes to our 2020 graduates: Emery Noll and Carter Williams, who have worked with me for the past 3 1/2 years, almost the same amount of time I’ve been in graduate school.</p>
       
         <div class="text-center">
+<<<<<<< HEAD
+        <div class="row justify-content-center">
+            <img src="images/RA Team.png" width="86%" "height="50">
+=======
         <div class="img-container">
             <img src="images/undergrad celebration/RA Team.jpg" style="width:68%", "height:auto">
+>>>>>>> 3b3b2cd60028d39fbfd46243f2c2b3839078b29b
         </div>
         <h2{font-size: .85em}><b>Virtual Zoom Celebration!</b></h2>
       </div>
@@ -405,133 +464,161 @@ gtag('config', 'UA-127639225-2');
         <div class="col-md-11">
     <h2 id="scavenger" class="horizontal-center">The Scavenger Hunt of the Century</h2>   
     <p>Team Building Scavenger Hunts are fun and great ways to strengthen group trust and collaboration. It’s an inexpensive but effective way of bringing a team together, and an entertaining activity related to the university campus culture.</p>
-            <div class="slideshow-container">
-              <div class="mySlides2"> 
-              <div class="img-container">
-              <img src="images/scavenger/01.png" style="width:70%">
-              <div class="text">Entire Team Jumping (Must Be in Mid-Air) on The Cutt</div>
-            </div>
+
+    <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 14</div>
+                <img src="images/scavenger/01.png" style="width:70%">
+                <div class="text">Entire Team Jumping (Must Be in Mid-Air) on The Cut</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 14</div>
+                <img src="images/scavenger/09.png" style="width:70%">
+                <div class="text">Taking a nap in a classroom
+                </div>
+              </div>
+
+               <div class="mySlides fade">
+                <div class="numbertext">3 / 14</div>
+                <img src="images/scavenger/02.png"  style="width:70%">
+                <div class="text">Planking on the fence
+                </div>
+              </div>
+
+                <div class="mySlides fade">
+                <div class="numbertext">4 / 14</div>
+                <img src="images/scavenger/03.png"  style="width:40%">
+                <div class="text">Human pyramid in front of the fence
+                </div>
+              </div>
+
+                <div class="mySlides fade">
+                <div class="numbertext">5 / 14</div>
+                <img src="images/scavenger/010.png"  style="width:70%">
+                <div class="text">Pretending your tourists taking selfies with Walking to the Sky
+                </div>
+              </div>
+
+                 <div class="mySlides fade">
+                <div class="numbertext">6 / 14</div>
+                <img src="images/scavenger/08.png" style="width:70%">
+                <div class="text">Entire team’s reflection in something other than a mirror
+                </div>
+              </div>
+
+                  <div class="mySlides fade">
+                <div class="numbertext">7 / 14</div>
+                <img src="images/scavenger/04.png" style="width:40%">
+                <div class="text">Posing like trees, under a tree
+                </div>
+              </div>
+
+               <div class="mySlides fade">
+                <div class="numbertext">8 / 14</div>
+                <img src="images/scavenger/011.png" style="width:70%">
+                <div class="text">Oldest Member of the team visiting his freshmen room
+                </div>
+              </div>
+
+                 <div class="mySlides fade">
+                <div class="numbertext">9 / 14</div>
+                <img src="images/scavenger/012.png" style="width:70%">
+                <div class="text">With an animal
+                </div>
+              </div>
+
+               <div class="mySlides fade">
+                <div class="numbertext">10 / 14</div>
+                <img src="images/scavenger/05.png" style="width:70%">
+                <div class="text">Picture with a policeman
+                </div>
+              </div>
+
+               <div class="mySlides fade">
+                <div class="numbertext">11 / 14</div>
+                <img src="images/scavenger/014.jpeg" style="width:40%">
+                <div class="text">Selfie with entire team on one bench
+                </div>
+              </div>
+
+                <div class="mySlides fade">
+                <div class="numbertext">12 / 14</div>
+                <img src="images/scavenger/013.png" style="width:70%">
+                <div class="text">Getting a hug from a stranger, Hugging a stranger, Having a stranger give a teammate a piggy back ride, and Proposing to a stranger
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">13 / 14</div>
+                <img src="images/scavenger/06.png" style="width:70%">
+                <div class="text">Spelling out CMU with your bodies on The Mall
+                </div>
+              </div>
+
+               <div class="mySlides fade">
+                <div class="numbertext">14 / 14</div>
+                <img src="images/scavenger/07.png" style="width:70%">
+                <div class="text">Posing with Dr. Mao Yisheng
+                </div>
+              </div>
             </div>
 
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/09.png" style="width:70%">
-              <div class="text">Taking a nap in a classroom</div>
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
             </div>
-            </div>
+            <br>
 
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/02.png" style="width:70%">
-              <div class="text">Planking on the fence</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/03.png" style="width:35%">
-              <div class="text">Human pyramid in front of the fence</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/010.png" style="width:50%">
-              <div class="text">Pretending your tourists taking selfies with Walking to the Sky</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/08.png" style="width:70%">
-              <div class="text">Entire team’s reflection in something other than a mirror</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/04.png" style="width:40%">
-              <div class="text">Posing like trees, under a tree</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/011.png" style="width:70%">
-              <div class="text">Oldest Member of the team visiting his freshmen room</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/012.png" style="width:70%">
-              <div class="text">With an animal</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/05.png" style="width:60%">
-              <div class="text">Picture with a policeman</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/014.jpeg" style="width:30%">
-              <div class="text">Selfie with entire team on one bench</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/013.png" style="width:70%">
-              <div class="text">Getting a hug from a stranger, Hugging a stranger, Having a stranger give a teammate a piggy back ride, and Proposing to a stranger</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/06.png" style="width:70%">
-              <div class="text">Spelling out CMU with your bodies on The Mall</div>
-            </div>
-            </div>
-
-            <div class="mySlides2">
-              <div class="img-container">
-              <img src="images/scavenger/07.png" style="width:70%">
-              <div class="text">Posing with Dr. Mao Yisheng</div>
-            </div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a> <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-        </div>
-
-        <script>
-          var slideIndex = [1,1,1,1,1];
-          var slideId = ["mySlides1", "mySlides2"]
-          showSlides(1, 0);
-          showSlides(1, 1);
-          
-          function plusSlides(n, no) {
-            showSlides(slideIndex[no] += n, no);
-          }
-          function currentSlide(n, no) {
-            showSlides(slideIndex[no] = n, no);
-          }
-          function showSlides(n, no) {
-            var i;
-            var x = document.getElementsByClassName(slideId[no]);
-            if (n > x.length) {slideIndex[no] = 1}    
-            if (n < 1) {slideIndex[no] = x.length}
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";  
-            }
-            x[slideIndex[no]-1].style.display = "block";  
-          }
       </script>
   </div>
 </div>
 </div>
+
+   <!-- Slide-Show Script -->
+<script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      </script>
+
 
   <hr>
 
