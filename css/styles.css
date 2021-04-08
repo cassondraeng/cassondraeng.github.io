@@ -109,6 +109,12 @@ and (max-device-width : 1024px) {
 	object-fit: cover;
 }
 
+.img-brain {
+	width: 310px;
+	height: 420px;
+	object-fit: cover;
+}
+
 
 .img-research-questions {
 	width: 300px;
