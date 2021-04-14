@@ -110,8 +110,8 @@ and (max-device-width : 1024px) {
 }
 
 .img-brain {
-	width: 310px;
-	height: 420px;
+	width: 400px;
+	height: 400px;
 	object-fit: cover;
 }
 
