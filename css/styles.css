@@ -260,6 +260,15 @@ hr
 	background-color:black !important;
 }
 
+.graybg {
+	background-color: #E7E7ED;
+}
+
+.darkgraybg {
+	background-color: #3C3C6F;
+	color: white;
+}
+
 /*if colors aren't clear*/
 /*.navbar .navbar-toggle {
   border-color: blue;
@@ -291,7 +300,7 @@ h2 {
 	font-weight: semi-bold;
 }
 h3 {
-	font-size: 120%;
+	font-size: 110%;
 	font-weight: semi-bold;
 }
 ul{
