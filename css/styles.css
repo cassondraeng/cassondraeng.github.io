@@ -177,18 +177,10 @@ and (max-device-width : 1024px) {
 	object-fit: cover;
 }
 
-.img-brain {
-	width: 300px;
-	height: 320px;
-	object-fit: cover;
-}
-
-
 .img-research-questions {
 	width: 300px;
-	height: 320px;
+	height: 330px;
 	object-fit: cover;
-	
 }
 
 .row {
