@@ -179,14 +179,14 @@ and (max-device-width : 1024px) {
 
 .img-brain {
 	width: 400px;
-	height: 400px;
+	height: 350px;
 	object-fit: cover;
 }
 
 
 .img-research-questions {
 	width: 300px;
-	height: 450px;
+	height: 350px;
 	object-fit: cover;
 	
 }
