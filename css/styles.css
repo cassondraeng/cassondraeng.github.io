@@ -153,7 +153,6 @@ and (max-device-width : 1024px) {
 	font-size: 12px !important;
 }
 
-
 .image-overlay-text {
 	font-size: 7vmin;
 }
@@ -212,7 +211,6 @@ and (max-device-width : 1024px) {
     transform: translateY(-50%)
 }
 
-
 .art-btn
 {
 	width: 100%;
@@ -225,7 +223,6 @@ and (max-device-width : 1024px) {
 	background-position-x: center;
 	background-position: 50%;
 }
-
 
 hr
 {
