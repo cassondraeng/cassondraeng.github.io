@@ -1,0 +1,17 @@
+
+/* for all devices (until the @media block) */
+body {
+  font-family: Arial, Helvetica, sans-serif ;
+}
+@media only screen and (min-width: 630px) {
+  /* only for screens wider or equal to 630 pixels */
+  /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
+  #content {
+    float: right ;
+    width: 80% ;
+  }
+  #navbar {
+    float: right;
+    width: 20%;
+  }
+}
