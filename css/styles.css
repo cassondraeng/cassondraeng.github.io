@@ -186,6 +186,24 @@ and (max-device-width : 1024px) {
   margin-bottom: 10px;
 }
 
+.responsive-col {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .responsive-col {
+    width: 100%;
+  }
+}
+
 .jumbotron{
 	padding-left: 30px;
 	padding-top: 20px;
