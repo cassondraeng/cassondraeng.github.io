@@ -260,6 +260,7 @@ gtag('config', 'UA-127639225-2');
     
 
         <ul>
+        <li><h3><a href="#graduates_fall2021">Fall 2021 Graduation Celebration 🍾</a></h3></li>
         <li><h3><a href="#artshow">Eileen's Art Exhibition 🌱</a></h3></li>
         <li><h3><a href="#holiday2">Holiday Festivities - Ornament Making 🎄</a></h3></li>
         <li><h3><a href="#graduates_spring">Spring 2021 Graduation Celebration 🍾</a></h3></li>
@@ -275,6 +276,65 @@ gtag('config', 'UA-127639225-2');
         </ul>
       </div>
 
+      <h2 id="#graduates_fall2021">Fall 2021 Graduation Celebration 🍾 </a></h3></li>
+      <p>Lab Coat Ceremony and Graduation Celebration for our 2021 Research Team Seniors, Eileen Lee and Sebastian Yang!</p>
+      <div id="slideshow5" class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 7</div>
+            <img src="images/undergrad celebration/fa2021_graduation/IMG_1388.jpg" style="width:36%">
+            <div class="text">Photo with Graduating Seniors Sebastian & Eileen</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 7</div>
+            <img src="images/undergrad celebration/fa2021_graduation/IMG_1390.jpg" style="width:36%">
+            <div class="text">Graduating Senior Sebastian Yang</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 7</div>
+            <img src="images/undergrad celebration/fa2021_graduation/IMG_1391.jpg" style="width:38%">
+            <div class="text">Graduating Senior Eileen Lee</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="images/undergrad celebration/fa2021_graduation/team.png" style="width:60%">
+            <div class="text">Lab Group Photo</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="images/undergrad celebration/fa2021_graduation/graduates.jpg" style="width:36%">
+            <div class="text">Graduating Seniors Sebastian & Eileen</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="images/undergrad celebration/fa2021_graduation/cake_champagne.jpg" style="width:48%">
+            <div class="text">Graduates with Cake and Champagne</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="images/undergrad celebration/fa2021_graduation/popping_champagne.jpg" style="width:54%">
+            <div class="text">Graduates Popping Champagne</div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1,slideshow5)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, slideshow5)">&#10095;</a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1, slideshow5)"></span> 
+            <span class="dot" onclick="currentSlide(2, slideshow5)"></span> 
+            <span class="dot" onclick="currentSlide(3, slideshow5)"></span> 
+            <span class="dot" onclick="currentSlide(4, slideshow5)"></span> 
+            <span class="dot" onclick="currentSlide(5, slideshow5)"></span> 
+            <span class="dot" onclick="currentSlide(6, slideshow5)"></span> 
+            <span class="dot" onclick="currentSlide(7, slideshow5)"></span> 
+        </div>
+      </div>
+
       <h2 id="artshow">Eileen's Art Exhibition 🌱 </a></h3></li>
       <p>Supporting our team members Eileen and Matthews’ Art Exhibition Grow a Garden to appreciate nature by relaxing with their plant prints, comics, paintings, and VR experiences. Eileen wanted to highlight that as life becomes more digitized, we turn to plants for reflection and care: gardening, planting seeds, and repotting to trace our own growth and well-being. Research shows that plants are healing for our mental and emotional health, serving as more than aesthetic objects and sometimes becoming our silent companions and friends. </p>
       <div class="row justify-content-center">
@@ -284,7 +344,7 @@ gtag('config', 'UA-127639225-2');
         <div class="column">
             <img src="images/matthew_art.png" style="width:100%"><br> 
         </div>
-        <img src="images/team_art.jpg" style="width:67%">
+        <img src="images/exhibition_photo.png" style="width:67%">
       </div><br><br>
 
       <h2 id="holiday2">Holiday Festivities - Ornament Making 🎄 </a></h3></li>
@@ -764,9 +824,9 @@ gtag('config', 'UA-127639225-2');
 
    <!-- Slide-Show Script -->
 <script>
-    var slideshow4 = document.getElementById("slideshow4");
-    slideshow4.currentSlideIndex = 1;
-    showSlides(slideshow4.currentSlideIndex, slideshow4);
+    var slideshow5 = document.getElementById("slideshow5");
+    slideshow5.currentSlideIndex = 1;
+    showSlides(slideshow5.currentSlideIndex, slideshow5);
 
     var slideshow1 = document.getElementById("slideshow1");
     slideshow1.currentSlideIndex = 1;
@@ -779,6 +839,10 @@ gtag('config', 'UA-127639225-2');
     var slideshow3 = document.getElementById("slideshow3");
     slideshow3.currentSlideIndex = 1;
     showSlides(slideshow3.currentSlideIndex, slideshow3);
+
+    var slideshow4 = document.getElementById("slideshow4");
+    slideshow4.currentSlideIndex = 1;
+    showSlides(slideshow4.currentSlideIndex, slideshow4);
 
     function plusSlides(n, slideshow) {
       showSlides(slideshow.currentSlideIndex += n, slideshow);
