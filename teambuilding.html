@@ -938,6 +938,25 @@ gtag('config', 'UA-127639225-2');
 </div>
 </div>
 
+<!-- Move the JavaScript code here/ noor -->
+<script>
+  var slideshow6 = document.getElementById("slideshow6");
+  slideshow6.currentSlideIndex = 1;
+  showSlides(slideshow6.currentSlideIndex, slideshow6);
+
+  function plusSlides(n, slideshow) {
+    showSlides(slideshow.currentSlideIndex += n, slideshow);
+  }
+
+  function currentSlide(n, slideshow) {
+    showSlides(slideshow.currentSlideIndex = n, slideshow);
+  }
+
+  function showSlides(n, slideshow) {
+    // Slideshow logic
+  }
+</script>
+
    <!-- Slide-Show Script these need to be in order! --> 
 <script>
 
