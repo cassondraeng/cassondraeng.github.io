@@ -332,6 +332,11 @@ ul{
 	height: 60px;
 	width: auto;
 }
+}
+#edlogo {
+	height: 50px;
+	width: 50px;
+}
 .freetime p {
 	font-size: 120%;
 }
